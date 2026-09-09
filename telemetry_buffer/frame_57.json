@@ -1,0 +1,14 @@
+﻿{
+    "Timestamp":  "2026-09-10 01:55:58",
+    "FrameIndex":  57,
+    "SystemMetrics":  {
+                          "CpuLoadPercent":  3,
+                          "MemoryLoadPercent":  42.67
+                      },
+    "KuramotoEngine":  {
+                           "LockState":  "DRIFTING",
+                           "CouplingK":  2.44,
+                           "OrderParameterR":  0.1
+                       },
+    "VerificationSeal":  "1A6E8B44765C798DF1BEF19EA5362788D23F36E0B40C9426A518558104D49F4F"
+}
