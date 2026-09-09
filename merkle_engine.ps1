@@ -1,82 +1,105 @@
-﻿$ErrorActionPreference = "Stop"
-
-function Get-SHA256String([string]$inputString) {
-    $bytes = [System.Text.Encoding]::UTF8.GetBytes($inputString)
-    $sha   = [System.Security.Cryptography.SHA256]::Create()
-    $hash  = $sha.ComputeHash($bytes)
-    return -join ($hash | ForEach-Object { $_.ToString("x2") })
-}
-
-function Get-SHA256File([string]$filePath) {
-    if (-not (Test-Path $filePath)) { return $null }
-    $sha    = [System.Security.Cryptography.SHA256]::Create()
-    $stream = [System.IO.File]::OpenRead($filePath)
+﻿<#
+.SYNOPSIS
+Deterministic Recursive Merkle Tree Engine & Cryptographic Attestation Seal.
+.DESCRIPTION
+Scans all workspace artifacts recursively, builds a pairwise SHA-256 Merkle Tree,
+and outputs the immutable sovereign Merkle Root Seal into BUILD_SEALED_MANIFEST.json.
+#>
+class RecursiveMerkleEngine {
+static [string] ComputeSHA256([byte[]]$bytes) {
+    $sha = [System.Security.Cryptography.SHA256]::Create()
     try {
-        $hash = $sha.ComputeHash($stream)
-        return -join ($hash | ForEach-Object { $_.ToString("x2") })
+        $hashBytes = $sha.ComputeHash($bytes)
+        return ([System.BitConverter]::ToString($hashBytes)).Replace("-", "").ToUpper()
     } finally {
-        $stream.Close()
+        $sha.Dispose()
     }
 }
 
-function Get-MerkleRoot([string[]]$leafHashes) {
-    if ($leafHashes.Count -eq 0) { return Get-SHA256String "NULL_LEAF" }
-    $level = $leafHashes
-    while ($level.Count -gt 1) {
-        $nextLevel = @()
-        for ($i = 0; $i -lt $level.Count; $i += 2) {
-            if ($i + 1 -lt $level.Count) {
-                $combined = $level[$i] + $level[$i+1]
-            } else {
-                $combined = $level[$i] + $level[$i]
-            }
-            $nextLevel += Get-SHA256String $combined
+static [string] ComputeStringSHA256([string]$inputStr) {
+    $bytes = [System.Text.Encoding]::UTF8.GetBytes($inputStr)
+    return [RecursiveMerkleEngine]::ComputeSHA256($bytes)
+}
+
+static [string] ComputeFileSHA256([string]$filePath) {
+    $bytes = [System.IO.File]::ReadAllBytes($filePath)
+    return [RecursiveMerkleEngine]::ComputeSHA256($bytes)
+}
+
+static [hashtable] BuildMerkleTree([string]$rootPath) {
+    # Fetch all files recursively excluding .git directory and manifest output
+    $files = Get-ChildItem -Path $rootPath -Recurse -File -ErrorAction SilentlyContinue | 
+        Where-Object { $_.FullName -notmatch '\\\.git\\' -and $_.Name -ne 'BUILD_SEALED_MANIFEST.json' } |
+        Sort-Object FullName
+
+    if ($files.Count -eq 0) {
+        throw "No valid files found to build Merkle Tree."
+    }
+
+    # Step 1: Compute Leaf Hashes
+    $leafNodes = [System.Collections.Generic.List[string]]::new()
+    $manifestLeaves = [System.Collections.Generic.List[hashtable]]::new()
+
+    foreach ($file in $files) {
+        $relPath = $file.FullName.Replace($rootPath, "").TrimStart('\', '/')
+        $hash = [RecursiveMerkleEngine]::ComputeFileSHA256($file.FullName)
+        $leafNodes.Add($hash)
+        $manifestLeaves.Add(@{
+            "RelativePath" = $relPath
+            "SHA256"       = $hash
+            "SizeBytes"    = $file.Length
+        })
+    }
+
+    # Step 2: Pairwise Recursive Reduction to Merkle Root
+    $currentLevel = $leafNodes
+    $treeDepth = 0
+
+    while ($currentLevel.Count -gt 1) {
+        $nextLevel = [System.Collections.Generic.List[string]]::new()
+        $treeDepth++
+
+        for ($i = 0; $i -lt $currentLevel.Count; $i += 2) {
+            $left = $currentLevel[$i]
+            $right = if (($i + 1) -lt $currentLevel.Count) { $currentLevel[$i + 1] } else { $left }
+            $combined = [RecursiveMerkleEngine]::ComputeStringSHA256($left + $right)
+            $nextLevel.Add($combined)
         }
-        $level = $nextLevel
+        $currentLevel = $nextLevel
     }
-    return $level[0]
+
+    $merkleRoot = $currentLevel[0]
+
+    return @{
+        "MerkleRootHash" = $merkleRoot
+        "TotalFiles"     = $files.Count
+        "TreeDepth"      = $treeDepth
+        "Leaves"         = $manifestLeaves
+        "TimestampUtc"   = ([datetime]::UtcNow).ToString("o")
+    }
+}
 }
 
-$leafHashes = @()
-$files = Get-ChildItem -Recurse -File | Where-Object { $_.FullName -notmatch "\\\.git\\" }
-foreach ($file in $files) {
-    $fHash = Get-SHA256File $file.FullName
-    if ($fHash) { $leafHashes += $fHash }
+# Run Engine & Output Manifest
+try {
+Write-Host "=== INITIALIZING RECURSIVE SHA-256 MERKLE TREE ENGINE ===" -ForegroundColor Cyan
+$result = [RecursiveMerkleEngine]::BuildMerkleTree((Get-Location).Path)
+
+$manifest = @{
+    "Engine"         = "God's Eye View - Sovereign Merkle Proof Core v1.0"
+    "MerkleRoot"     = $result["MerkleRootHash"]
+    "TotalArtifacts" = $result["TotalFiles"]
+    "TreeDepth"      = $result["TreeDepth"]
+    "Timestamp"      = $result["TimestampUtc"]
+    "ArtifactLeaves" = $result["Leaves"]
 }
 
-$merkleRoot  = Get-MerkleRoot $leafHashes
-$shortMerkle = $merkleRoot.Substring(0, 12)
+$jsonOutput = $manifest | ConvertTo-Json -Depth 5
+Set-Content -Path "BUILD_SEALED_MANIFEST.json" -Value $jsonOutput -Encoding UTF8
 
-Write-Host "================================================================================" -ForegroundColor DarkCyan
-Write-Host "  ROBDOE ORACLE MERKLE ROOT : $merkleRoot" -ForegroundColor Green
-Write-Host "================================================================================" -ForegroundColor DarkCyan
-
-$readmeLines = @(
-    "",
-    "## Robdoe Oracle & Merkle Core State",
-    "- **Merkle Tree Root Hash:** ``$merkleRoot``",
-    "- **Short Tag Identifier:** ``merkle-$shortMerkle``",
-    "- **Oracle Core:** `src/robdoe_oracle.ps1` (Deterministic Phase/Thermal State Predictor)",
-    "- **Sync Core:** Pure Software Thermal Kuramoto Engine"
-)
-Add-Content -Path "README.md" -Value ($readmeLines -join [Environment]::NewLine) -Encoding UTF8
-
-git add -A
-$timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-git commit -m "feat(oracle): integrate Robdoe Oracle predictor & update merkle root [$shortMerkle] at $timestamp" --quiet
-
-$tagName = "v2026.09.01-merkle-$shortMerkle"
-git tag -f -a $tagName -m "Merkle Tree Root Hash: $merkleRoot"
-
-$commits = git rev-list --reverse HEAD
-$idx = 1
-foreach ($c in $commits) {
-    $seqTag = "v2026.09.01-rev{0:D2}" -f $idx
-    git tag -f -a $seqTag $c -m "Sequential tag $seqTag for $c"
-    $idx++
+Write-Host ("`n[✔] RECURSIVE MERKLE ROOT SEAL: {0}" -f $result["MerkleRootHash"]) -ForegroundColor Green
+Write-Host ("[*] Total Artifacts Processed: {0} | Tree Depth: {1}" -f $result["TotalFiles"], $result["TreeDepth"]) -ForegroundColor Yellow
+Write-Host ("[*] Attestation manifest sealed to .\BUILD_SEALED_MANIFEST.json") -ForegroundColor Cyan
+} catch {
+Write-Error "Merkle Tree calculation failed: $_"
 }
-
-Write-Host "[+] Pushing repository, oracle module, commits, and tags to origin..." -ForegroundColor Yellow
-git push origin HEAD --force
-git push origin --tags --force
-Write-Host "[✓] Robdoe Oracle integrated, tagged, and pushed to origin." -ForegroundColor Green

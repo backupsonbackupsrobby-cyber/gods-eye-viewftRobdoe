@@ -1,6 +1,2774 @@
 ﻿{
-    "ReleaseTitle":  "v1.0.0 — Robdoe Oracle Core \u0026 Thermal Kuramoto Engine",
-    "CompletionTime":  "2026-09-10 01:57:52",
-    "FinalRootHash":  "D2B991687D62F970DFA2A346AB9D627654A687F1B5ABCEC91F1E9C4125924612",
-    "BuildIntegrity":  "VERIFIED"
+    "Timestamp":  "2026-09-09T17:00:46.0905370Z",
+    "MerkleRoot":  "EB72EC11E24B2BAFF40A58F842E4015135910A6FFED29925B9DCEE48F5377D06",
+    "TotalArtifacts":  553,
+    "TreeDepth":  10,
+    "ArtifactLeaves":  [
+                           {
+                               "SizeBytes":  8100,
+                               "SHA256":  "7281A48CC9B866BCD9A5DAEDA07DE7E6B1A70CABF3B52B8440A666A8EF7EE08F",
+                               "RelativePath":  ".env.example"
+                           },
+                           {
+                               "SizeBytes":  737,
+                               "SHA256":  "E859B1C76827EE7FED508C8F24597B9F85A6596D65E74D5EEA006A0E238B23D8",
+                               "RelativePath":  ".gitattributes"
+                           },
+                           {
+                               "SizeBytes":  29,
+                               "SHA256":  "9456E6E16AB639E85FB55F567DA12881DC21C42DF99A506751FF547271537CF9",
+                               "RelativePath":  ".github\\CODEOWNERS"
+                           },
+                           {
+                               "SizeBytes":  1867,
+                               "SHA256":  "2C41F2BA0E9F87E2B7FA384DE618C882674E1B405CC27DCC0FAD0A6110692944",
+                               "RelativePath":  ".github\\workflows\\ci.yml"
+                           },
+                           {
+                               "SizeBytes":  152,
+                               "SHA256":  "E83484870F2C0E432EBDBD78165643ADC75001D52598A87119FEEFC00E9B5358",
+                               "RelativePath":  ".gitignore"
+                           },
+                           {
+                               "SizeBytes":  11902,
+                               "SHA256":  "FB4BBC3F07AE64714A5ED16E6D4221A1949B94A9B4BAFB5F8F3813CDE95A0CEF",
+                               "RelativePath":  "CHANGELOG.md"
+                           },
+                           {
+                               "SizeBytes":  3,
+                               "SHA256":  "37517E5F3DC66819F61F5A7BB8ACE1921282415F10551D2DEFA5C3EB0985B570",
+                               "RelativePath":  "config\\cctv_sources.austin.json"
+                           },
+                           {
+                               "SizeBytes":  1658,
+                               "SHA256":  "8467DA43B9770F318D70D2780925876671E6261B032A00596A9F2FDA86DF66EA",
+                               "RelativePath":  "config\\cctv_sources.shinjuku.json"
+                           },
+                           {
+                               "SizeBytes":  4462,
+                               "SHA256":  "194342A298B6E742F8256A155D69BB559D45D6F227A7ADA3F04A0C4C768CED46",
+                               "RelativePath":  "CONTRIBUTING.md"
+                           },
+                           {
+                               "SizeBytes":  3843,
+                               "SHA256":  "C1A42205273BE740F8DF78E54956D347845C0E65C0DCAE29B5AD5083DAACF68C",
+                               "RelativePath":  "Core_Observability_Daemon.ps1"
+                           },
+                           {
+                               "SizeBytes":  21442,
+                               "SHA256":  "A3439D0BD33774776ED8293E8202050257FA8A5004D90F0B5F8374D53291D719",
+                               "RelativePath":  "DATA_SOURCES.md"
+                           },
+                           {
+                               "SizeBytes":  275672,
+                               "SHA256":  "1A44738FD311488F63D4EC662F8432935A446FB2394BFA9C8645ACEE4D9E4DED",
+                               "RelativePath":  "docs\\CURRENT-STATE.md"
+                           },
+                           {
+                               "SizeBytes":  4073,
+                               "SHA256":  "3DF1CEAF1A973D70544B805FF75C924C727B62E298F5129D48EBC22179837F06",
+                               "RelativePath":  "docs\\KNOWN-ISSUES.md"
+                           },
+                           {
+                               "SizeBytes":  1004961,
+                               "SHA256":  "990B50146640D1060DEF7A15A0460EE5FB210DCBBF3D9B4E7ADD930BE18F81AF",
+                               "RelativePath":  "docs\\media\\01-style-sweep.gif"
+                           },
+                           {
+                               "SizeBytes":  5917886,
+                               "SHA256":  "CA91378F5DB86C7EBB06AE0C81889A23EDEE23AE072E71A06F93480DCFE5DF8E",
+                               "RelativePath":  "docs\\media\\01-voice-annotate-zilker.gif"
+                           },
+                           {
+                               "SizeBytes":  6064699,
+                               "SHA256":  "DC4EAEBA74A517EE62CA6C7E85BB64AFAF132F771A732B3922E26C8FC12946BE",
+                               "RelativePath":  "docs\\media\\03-austin-cctv.gif"
+                           },
+                           {
+                               "SizeBytes":  3188741,
+                               "SHA256":  "E49BAE11FC7F74203745BA483BE5D90699AAB5FCB257D7EAB38FB1F7D0643B16",
+                               "RelativePath":  "docs\\media\\04-airport-distance.gif"
+                           },
+                           {
+                               "SizeBytes":  5080454,
+                               "SHA256":  "D1982DCCB00EF04509848A9599BC1694FB80AAC69E66F7F2388528CA093A269E",
+                               "RelativePath":  "docs\\media\\05-traffic-to-cctv.gif"
+                           },
+                           {
+                               "SizeBytes":  5557461,
+                               "SHA256":  "D04FC1326F7828D88510DEB43321B0A9795842A4A0E226112310851D67FA7322",
+                               "RelativePath":  "docs\\media\\06-cockpit-ar.gif"
+                           },
+                           {
+                               "SizeBytes":  6242391,
+                               "SHA256":  "2327154649403CBA406B4451722EB94CECB837EC60389B24FD3BCDDD04019DFD",
+                               "RelativePath":  "docs\\media\\07-helicopter-loops.gif"
+                           },
+                           {
+                               "SizeBytes":  5014073,
+                               "SHA256":  "D4C0E1FF24693F1BEE61DB3ECF04290A7C3457D730026EED6E373C04E6D429D9",
+                               "RelativePath":  "docs\\media\\08-boneyard.gif"
+                           },
+                           {
+                               "SizeBytes":  910111,
+                               "SHA256":  "729FEE66C6E2465358F3F2A3B981271B45066D15E203B4450FAFF153CFB957C1",
+                               "RelativePath":  "docs\\media\\08-falcon9-replay.gif"
+                           },
+                           {
+                               "SizeBytes":  1886522,
+                               "SHA256":  "8504852ABCC786D7B9E35EFC4E6BA68DA6BCA5E56F8A914389A3FA57EDFF612C",
+                               "RelativePath":  "docs\\media\\09-undersea-cables.gif"
+                           },
+                           {
+                               "SizeBytes":  3876526,
+                               "SHA256":  "C8578F5E41ED738E25E0802339D05788F78DD7DFF9D0B267566767C94805A903",
+                               "RelativePath":  "docs\\media\\10-walking-route-flythrough.gif"
+                           },
+                           {
+                               "SizeBytes":  2259945,
+                               "SHA256":  "D35E2E5FCD3C5E37D4B5FB4142033187460CABCD0F05FD0AC487B355C1131A33",
+                               "RelativePath":  "docs\\media\\12-switch-aircraft-cockpit.gif"
+                           },
+                           {
+                               "SizeBytes":  3102742,
+                               "SHA256":  "F32B93F513B35A3BD746824AF72B00CFB51ABA0C9EF18708282068BFC19BF52B",
+                               "RelativePath":  "docs\\media\\14-iss-over-ukraine.gif"
+                           },
+                           {
+                               "SizeBytes":  2776244,
+                               "SHA256":  "2BC85B54570F48BC6AEAE833481DD4E4F697A148226FCA6861B63FF2A4C9D4BF",
+                               "RelativePath":  "docs\\media\\15-global-radio-layer.gif"
+                           },
+                           {
+                               "SizeBytes":  6487951,
+                               "SHA256":  "8DA6943138231C130A62CBA938C7508BCD77857F554CE59FD2805CD81ADFDA8A",
+                               "RelativePath":  "docs\\media\\hero-open-source-reveal.gif"
+                           },
+                           {
+                               "SizeBytes":  130925,
+                               "SHA256":  "D1EEE944EAF04D9063D0251D21E1C8EB3B30471DC576044BAB58917E35995924",
+                               "RelativePath":  "docs\\media\\open-source-survey.png"
+                           },
+                           {
+                               "SizeBytes":  2905,
+                               "SHA256":  "86F9C9551DEDABEDD1346C39E2847B233C396C3044F86DE35E4EE2E431B4D7D6",
+                               "RelativePath":  "docs\\media\\README.md"
+                           },
+                           {
+                               "SizeBytes":  1226853,
+                               "SHA256":  "3F1A57D5A9CF17D3371E936A86EA6AFF82A406D6F30771BC82C217D8261F6876",
+                               "RelativePath":  "docs\\media\\start-here\\airport-ground-traffic-google-3d.gif"
+                           },
+                           {
+                               "SizeBytes":  8550813,
+                               "SHA256":  "7E25E49D08BCFEE317E25496751FCEE55844E5CDB0B3911C7CD395244EADFC3C",
+                               "RelativePath":  "docs\\media\\start-here\\military-cockpit-dense-google-3d.gif"
+                           },
+                           {
+                               "SizeBytes":  980981,
+                               "SHA256":  "2BAB334300D0327D9016FDE5BD973EB662AD1C20F7C7DED7888E7660250010A3",
+                               "RelativePath":  "docs\\media\\youtube-popular-videos.png"
+                           },
+                           {
+                               "SizeBytes":  1656,
+                               "SHA256":  "79A31D439DB34FD17B910595322D1F4052F9B8B8B4AB3A284BC3BD1562F46D21",
+                               "RelativePath":  "docs\\opensky-auth.md"
+                           },
+                           {
+                               "SizeBytes":  6341,
+                               "SHA256":  "5B464A78CA49376D1E327AB99619736A23B536E55B5C7C35DE5ADFA02653F512",
+                               "RelativePath":  "docs\\PERFORMANCE.md"
+                           },
+                           {
+                               "SizeBytes":  55739,
+                               "SHA256":  "6A87E2EA89089E1DE5390CA37041315E4FD75FF3A6D5A0AB3AF8AA3D933A25C9",
+                               "RelativePath":  "index.html"
+                           },
+                           {
+                               "SizeBytes":  2713,
+                               "SHA256":  "FFEBC8BB68C9A25C164D4182837B32F25AB4D05DB866C149A7358F0521523171",
+                               "RelativePath":  "LICENSE"
+                           },
+                           {
+                               "SizeBytes":  3929,
+                               "SHA256":  "E893AA14CAE60FE7CBBA069549B8509F979A1D1143F957D95DF9115083FA0F69",
+                               "RelativePath":  "merkle_engine.ps1"
+                           },
+                           {
+                               "SizeBytes":  1669,
+                               "SHA256":  "0381A97BA9F2FD5FADA634A23A0C31D6367ABB46B1AC13A468998DC62C40F7C0",
+                               "RelativePath":  "package.json"
+                           },
+                           {
+                               "SizeBytes":  128270,
+                               "SHA256":  "4851A0EF026543B65FA0E55FC62EAB6237D5E34BD7346F0A88B058A9EEB8EC3D",
+                               "RelativePath":  "package-lock.json"
+                           },
+                           {
+                               "SizeBytes":  1264,
+                               "SHA256":  "042E3FD7BB858F0A48F969715CC40327B8917EA7328497AF60D5EFF5113B8754",
+                               "RelativePath":  "pinokio\\_ENVIRONMENT"
+                           },
+                           {
+                               "SizeBytes":  1348,
+                               "SHA256":  "9C8BE5D2EEFAEA56C7579FA5E8D04499CA0D625E388831119D182435D53EC1E2",
+                               "RelativePath":  "pinokio\\install.js"
+                           },
+                           {
+                               "SizeBytes":  25,
+                               "SHA256":  "8005A3491DB7D92F36AC66369861589F9C47123D3A7C71E643FC2C06168CD45A",
+                               "RelativePath":  "pinokio\\package.json"
+                           },
+                           {
+                               "SizeBytes":  1558,
+                               "SHA256":  "AB4AB15675C8A79515446E39FF9FF7BBADF5D4291933A5CB4893377BE441993D",
+                               "RelativePath":  "pinokio\\pinokio.js"
+                           },
+                           {
+                               "SizeBytes":  172,
+                               "SHA256":  "7CBB25DD4AB93C3221ADB892C7C4EB0A734A44A468AA15AA0B999865E5BA3D91",
+                               "RelativePath":  "pinokio\\reset.js"
+                           },
+                           {
+                               "SizeBytes":  1634,
+                               "SHA256":  "98141A8EF3AD1AACFE743AD43DC71F02AE477712B17DB62C4514E1944EA48D2A",
+                               "RelativePath":  "pinokio\\start.js"
+                           },
+                           {
+                               "SizeBytes":  1076,
+                               "SHA256":  "0F951E46B6E4161C9F5466F761DE323E1911DBE2CBAF9B987F954772A20AE2D4",
+                               "RelativePath":  "pinokio\\update.js"
+                           },
+                           {
+                               "SizeBytes":  325,
+                               "SHA256":  "3D4472C928F7D01AFB121AD7FCD949F516B7EA9E8125D9E63FD2C6ABEC3DF74B",
+                               "RelativePath":  "public\\location.svg"
+                           },
+                           {
+                               "SizeBytes":  8434,
+                               "SHA256":  "9984443BF385B0F2EB41401FF0416CF2250DB3C176E8DDD8A6D5D91C93A6B880",
+                               "RelativePath":  "public\\logo.svg"
+                           },
+                           {
+                               "SizeBytes":  498,
+                               "SHA256":  "628B68FCDF9D2CD0BD37B07ADFB918F7804C6D35DDFA3B169703DD21A10A4EB1",
+                               "RelativePath":  "public\\mic.svg"
+                           },
+                           {
+                               "SizeBytes":  88144,
+                               "SHA256":  "6780E81A4CE48C04E4C36404BF8BDD2E647933B2995F8CC62A81F9B9D9CAF91F",
+                               "RelativePath":  "public\\models\\airplane.glb"
+                           },
+                           {
+                               "SizeBytes":  263948,
+                               "SHA256":  "4641E4CD87015DFCBD94D6EC2F1F0A1D6423D814413CE6DF8E8F874CB96B1915",
+                               "RelativePath":  "public\\models\\atr72.glb"
+                           },
+                           {
+                               "SizeBytes":  470200,
+                               "SHA256":  "182963A700F02102C8AA3A11E467A33DF383CDF1C58418E561104439DFEC61AF",
+                               "RelativePath":  "public\\models\\b789.glb"
+                           },
+                           {
+                               "SizeBytes":  320788,
+                               "SHA256":  "6A47C8B2C13106E40219483598EF772DA35B63261688406F427F24C5A8F92027",
+                               "RelativePath":  "public\\models\\bell206.glb"
+                           },
+                           {
+                               "SizeBytes":  526088,
+                               "SHA256":  "ABA52B6B784534DB63C1712B0189CE1B74A94EDEA586B41DB9B795F9BE3601D8",
+                               "RelativePath":  "public\\models\\c172.glb"
+                           },
+                           {
+                               "SizeBytes":  562036,
+                               "SHA256":  "5C8A7A98CDBB24FAAC928370DF7F3ADC03DA8388663A6BB856B59366D271AF1E",
+                               "RelativePath":  "public\\models\\citation2.glb"
+                           },
+                           {
+                               "SizeBytes":  270988,
+                               "SHA256":  "AC33DC352DC4EF17946680D0ADA5CD530E7A4BED95C6EF4AAF2153C381D4BD1A",
+                               "RelativePath":  "public\\models\\jet.glb"
+                           },
+                           {
+                               "SizeBytes":  542880,
+                               "SHA256":  "18E8588F44ED4522F838B5D1CE1EAD6EF4C08DC5536E21CF7F2D8E60B045AD35",
+                               "RelativePath":  "public\\models\\mq9.glb"
+                           },
+                           {
+                               "SizeBytes":  4929,
+                               "SHA256":  "0E773B75019C0C39F8689D8CC1CE6D4E4A8AB3F995D413413D775C27827612F9",
+                               "RelativePath":  "public\\models\\README.md"
+                           },
+                           {
+                               "SizeBytes":  230024,
+                               "SHA256":  "48665716BE710479635171B3169F3F056E4785CA1E979089E3D47A83BF480D9A",
+                               "RelativePath":  "public\\models\\ship.glb"
+                           },
+                           {
+                               "SizeBytes":  489,
+                               "SHA256":  "01184ACD8CC80FC19525B3B1BBD4904C77CAC38CC43329A8ED0E861E74FCFA62",
+                               "RelativePath":  "public\\pin.svg"
+                           },
+                           {
+                               "SizeBytes":  351,
+                               "SHA256":  "BCAB34A5A2B20C958A1C2BFBAFE6344FEB2595DA9D338431036CF002009D5177",
+                               "RelativePath":  "public\\visual-presets.svg"
+                           },
+                           {
+                               "SizeBytes":  35826,
+                               "SHA256":  "36CD9279418420B2821344909DD487A343B84400BA1B70EF43E03B1569D2B563",
+                               "RelativePath":  "README.md"
+                           },
+                           {
+                               "SizeBytes":  617,
+                               "SHA256":  "155CDF77DFEAB69AE2B5C54E5177F7575380AC52AB9654E613069540B3FB03A5",
+                               "RelativePath":  "RELEASE.md"
+                           },
+                           {
+                               "SizeBytes":  6106,
+                               "SHA256":  "D56E7E30BE925343DA1AAB69F51FCD6D7F9681A6CCC253FA068198CEE83173EA",
+                               "RelativePath":  "scripts\\build-sf-neighborhoods.mjs"
+                           },
+                           {
+                               "SizeBytes":  7430,
+                               "SHA256":  "7809EC460A56E5D75411B68CBB67F2BBD83209C545EEDC50C3D561040F1BEBB8",
+                               "RelativePath":  "scripts\\dev-cctv.sh"
+                           },
+                           {
+                               "SizeBytes":  16697,
+                               "SHA256":  "2BF548BA50C178C20BE8303BA8D7638D177E6B10DABAA865B64DDD9501DF0AB7",
+                               "RelativePath":  "scripts\\dev-fresh.sh"
+                           },
+                           {
+                               "SizeBytes":  7000,
+                               "SHA256":  "E7D3E591EC7FB72D32F47DBC03940B6315C47C1FD6413A78FDC00A482606FA0F",
+                               "RelativePath":  "scripts\\dev-secure.sh"
+                           },
+                           {
+                               "SizeBytes":  884274,
+                               "SHA256":  "B57AF70DB1922B72FEC2C6C58348CCD3309E10AA1E8EDEC2890277DFF26CC7BB",
+                               "RelativePath":  "scripts\\fixtures\\voice\\full-globe-turn-on-radio.wav"
+                           },
+                           {
+                               "SizeBytes":  604,
+                               "SHA256":  "B54C9589DB0F39D6629F13522E5B9F852BDFAFD4E63F54EDC52996FAC2805500",
+                               "RelativePath":  "scripts\\fixtures\\voice\\README.md"
+                           },
+                           {
+                               "SizeBytes":  4263,
+                               "SHA256":  "687C50E654DC20FCE1A4E96CBB18CD478CF355272DAC4928950E786DD0835861",
+                               "RelativePath":  "scripts\\focus-allocation-check.mjs"
+                           },
+                           {
+                               "SizeBytes":  1792,
+                               "SHA256":  "D6F4AAE640D3B267D8C0C5E5839C7FC13E40A0DB49F35C8DA644DFD304F35288",
+                               "RelativePath":  "scripts\\opensky-import-client.sh"
+                           },
+                           {
+                               "SizeBytes":  4834,
+                               "SHA256":  "91CC8A36CECFA4E1097611DBE79702E44D553A92C4E2D8BEB633F622ED9B50B2",
+                               "RelativePath":  "scripts\\pinokio-environment.mjs"
+                           },
+                           {
+                               "SizeBytes":  2436,
+                               "SHA256":  "D1AE32441CC3A5FB5535C985B361285B1DCF4B86D634728F2985551DDE698D33",
+                               "RelativePath":  "scripts\\pinokio-install.mjs"
+                           },
+                           {
+                               "SizeBytes":  1282,
+                               "SHA256":  "F5B332E64F4D05DFB637F907A0DDB8D54822DB3837A86D60EF82217A9961BF2E",
+                               "RelativePath":  "scripts\\pinokio-preflight.mjs"
+                           },
+                           {
+                               "SizeBytes":  428,
+                               "SHA256":  "BE558E5A6B9DEACEC6BBCE7EA3B5C6E91B7CFB036A1B9BD8FE232A581AD0B511",
+                               "RelativePath":  "scripts\\pinokio-reset.mjs"
+                           },
+                           {
+                               "SizeBytes":  2172,
+                               "SHA256":  "C483BACCB1145EC3942341AFFDC9500019292380E4B15F2793CDC0E39BE4C5CC",
+                               "RelativePath":  "scripts\\pinokio-start.mjs"
+                           },
+                           {
+                               "SizeBytes":  173,
+                               "SHA256":  "177B692B0CB7D5C34922E9E5D4DF0847FE9BEC3AEEE5C67DDD87C8B6BC7AD027",
+                               "RelativePath":  "scripts\\pinokio-update.mjs"
+                           },
+                           {
+                               "SizeBytes":  18492,
+                               "SHA256":  "7A0D00F1B03EA202D6429B65806133467F0B32A3E5C8537054E1F2F57CD1D1DF",
+                               "RelativePath":  "scripts\\qa-attribution-b12.mjs"
+                           },
+                           {
+                               "SizeBytes":  11343,
+                               "SHA256":  "359247843852E68A1FE94AB095803560D779C00EC2394A3FC0A4CA901834E358",
+                               "RelativePath":  "scripts\\qa-cables-overlay.mjs"
+                           },
+                           {
+                               "SizeBytes":  4529,
+                               "SHA256":  "1E52FF78F340119B59BD895FA812A1EC2AE96E1B097109D53A42E22956FEA44F",
+                               "RelativePath":  "scripts\\qa-cables-render-probe.mjs"
+                           },
+                           {
+                               "SizeBytes":  2930,
+                               "SHA256":  "5DDB55A71F4332C51F0F3E18DCDDE319733E0DE290454C09ADBFF6FC7F81CF29",
+                               "RelativePath":  "scripts\\qa-cables-shot.mjs"
+                           },
+                           {
+                               "SizeBytes":  78345,
+                               "SHA256":  "5221F1228304A9ADFD745E022402BCB32B20B83A52F65E743BCE74F6BC788D33",
+                               "RelativePath":  "scripts\\qa-cctv-v2.mjs"
+                           },
+                           {
+                               "SizeBytes":  24494,
+                               "SHA256":  "0D83510D06BA0C7D80372924C2854C1F4642F05C6BEE889C106E6CA0BFA15C6F",
+                               "RelativePath":  "scripts\\qa-cockpit-plates.mjs"
+                           },
+                           {
+                               "SizeBytes":  95099,
+                               "SHA256":  "CD02BB7E77CEDC3D7611FB8018F7BC512BE5C8FC0250325BB9A3228B3FBF0858",
+                               "RelativePath":  "scripts\\qa-cockpit-utility.mjs"
+                           },
+                           {
+                               "SizeBytes":  29703,
+                               "SHA256":  "69A9C8FAEC5C0D700CD734EF537EECFBFE5B6E7B567ADE75B0DE2FA229D9B5EA",
+                               "RelativePath":  "scripts\\qa-enrich-ambient.mjs"
+                           },
+                           {
+                               "SizeBytes":  24611,
+                               "SHA256":  "D32AC8333B66DFD71323F245CCA77078FAEF42C6028FC4DF6CE5CC11C3AF8274",
+                               "RelativePath":  "scripts\\qa-failstate-b10.mjs"
+                           },
+                           {
+                               "SizeBytes":  21731,
+                               "SHA256":  "1032DA7107F2E5BB0B194CE26BE73CCE040859C3FD3ABE940368135B292C8143",
+                               "RelativePath":  "scripts\\qa-firms.mjs"
+                           },
+                           {
+                               "SizeBytes":  43733,
+                               "SHA256":  "728DDCEADAF7BCE9A4F193D299188D7D752539DD8CC5B41C91A32CA86E0D944C",
+                               "RelativePath":  "scripts\\qa-firstrun.mjs"
+                           },
+                           {
+                               "SizeBytes":  21907,
+                               "SHA256":  "99A45624E7967EBB0D74DE13656D0970617CF6D44186C2BFE3EEAE2824AD62C3",
+                               "RelativePath":  "scripts\\qa-firstrun-mutations.mjs"
+                           },
+                           {
+                               "SizeBytes":  12124,
+                               "SHA256":  "30543F145D99984645401E94DAE3F020F0979CEB9E0996136F9EE2A5C37DC096",
+                               "RelativePath":  "scripts\\qa-floor-hold.mjs"
+                           },
+                           {
+                               "SizeBytes":  10915,
+                               "SHA256":  "35712849E4698BC0A859CB78DA44BDF6A2473D0E0CA296C28701ED82C28AAF28",
+                               "RelativePath":  "scripts\\qa-floorhold-mutations.mjs"
+                           },
+                           {
+                               "SizeBytes":  2817,
+                               "SHA256":  "D0371C649D0FDCA3AA73C968E3C777684EC3A46FF31CB49FAF6B4FCCEBB0C234",
+                               "RelativePath":  "scripts\\qa-floorhold-probe-cost.mjs"
+                           },
+                           {
+                               "SizeBytes":  8385,
+                               "SHA256":  "25A8A8F3D364E306A842DD84A5A6BD684E5ADCF01A2A0E0EBB890B189398438C",
+                               "RelativePath":  "scripts\\qa-floorhold-staircase.mjs"
+                           },
+                           {
+                               "SizeBytes":  8786,
+                               "SHA256":  "9405BE14437900695AFC4FDC32BF283F25A31E7483B1F99EA54184364289707E",
+                               "RelativePath":  "scripts\\qa-floor-verify.mjs"
+                           },
+                           {
+                               "SizeBytes":  29304,
+                               "SHA256":  "6C538AF8689A41FA2C67CF25740019644907CAC0371B1E575F3B419495545660",
+                               "RelativePath":  "scripts\\qa-flyroute-cinema.mjs"
+                           },
+                           {
+                               "SizeBytes":  6755,
+                               "SHA256":  "63B4D002B3C0912291B1AEC204937823E98F5F1AEABF5B2241A1BAD5FE1D3853",
+                               "RelativePath":  "scripts\\qa-flyroute-mutations.mjs"
+                           },
+                           {
+                               "SizeBytes":  28482,
+                               "SHA256":  "B6DD072A78CE514D32F366774E023EA2392094095CCD2572D449D079B294E886",
+                               "RelativePath":  "scripts\\qa-focus-evidence.mjs"
+                           },
+                           {
+                               "SizeBytes":  59848,
+                               "SHA256":  "2525E755890F389B1B9CA930389A0324FF0A705B5AE527AA2978C20DC3BEDFE2",
+                               "RelativePath":  "scripts\\qa-heading-b3.mjs"
+                           },
+                           {
+                               "SizeBytes":  38473,
+                               "SHA256":  "69F1594CC06ADA651346B8768E788132BD5397B055E4E3FFC67F9E8B3B99C586",
+                               "RelativePath":  "scripts\\qa-height-datum.mjs"
+                           },
+                           {
+                               "SizeBytes":  128362,
+                               "SHA256":  "06DFA2033587EC05220456B6FA27CC31D4151D26C68F4C6FC18D96FADF1ECEE6",
+                               "RelativePath":  "scripts\\qa-l9-matrix.mjs"
+                           },
+                           {
+                               "SizeBytes":  16699,
+                               "SHA256":  "303729DE54EC62202F4189DC8352EE6DC2DD7FDACAC3A1193F2C049E59039089",
+                               "RelativePath":  "scripts\\qa-label-readability.mjs"
+                           },
+                           {
+                               "SizeBytes":  24525,
+                               "SHA256":  "FA4EBEA357C27C9DF76F530A40B5C235A3CC50F2ACB074BBBA0E154207E0B0DE",
+                               "RelativePath":  "scripts\\qa-labels.mjs"
+                           },
+                           {
+                               "SizeBytes":  34585,
+                               "SHA256":  "69F717143B6DB97A8FFE1023048EA08CCA62473D8A6EF9C50703970424727353",
+                               "RelativePath":  "scripts\\qa-map-source-tray.mjs"
+                           },
+                           {
+                               "SizeBytes":  38650,
+                               "SHA256":  "3F70DEFF31FDDF03A140B9EBE7457366355E37E55E4C49DC0BD519B9171AB0F4",
+                               "RelativePath":  "scripts\\qa-overlay-baseline.mjs"
+                           },
+                           {
+                               "SizeBytes":  21316,
+                               "SHA256":  "9F5B07C2B99BCB5F3AC27AA9DA6F92E07C808783925206D0ABDFA9B4CB68DF61",
+                               "RelativePath":  "scripts\\qa-perf.mjs"
+                           },
+                           {
+                               "SizeBytes":  230254,
+                               "SHA256":  "31287E1B1A6712BCD11D5134691FE1CD66AB0C7C9ED72BB1F28D89B6B521421D",
+                               "RelativePath":  "scripts\\qa-radio.mjs"
+                           },
+                           {
+                               "SizeBytes":  31462,
+                               "SHA256":  "668329C603245A1CB26731DE6E93DF850E3D2238EA0C7DA788641010DEFC2B88",
+                               "RelativePath":  "scripts\\qa-sprites-b5.mjs"
+                           },
+                           {
+                               "SizeBytes":  15470,
+                               "SHA256":  "6B71AC68C08A2B2923BA0081D125B9FC4AD3BEFC9761A0424809AEFBB8382BA4",
+                               "RelativePath":  "scripts\\qa-traffic.mjs"
+                           },
+                           {
+                               "SizeBytes":  21157,
+                               "SHA256":  "2742A3B7CBAE4B895F5A8EE20858B7BF0637BDBCAE518947AC24609EC55511CC",
+                               "RelativePath":  "scripts\\qa-traffic-baseline.mjs"
+                           },
+                           {
+                               "SizeBytes":  10586,
+                               "SHA256":  "A34C8C402AB07CE449D9B461160C860BD82F9CD3E94AC0E3CFC5E8E37F39591D",
+                               "RelativePath":  "scripts\\qa-traffic-jamviz-ab.mjs"
+                           },
+                           {
+                               "SizeBytes":  12272,
+                               "SHA256":  "DE27A1F34AA04B01D284C9E5BAE0949FC013C6921D115BE5A11FEBF0CBD55649",
+                               "RelativePath":  "scripts\\qa-traffic-preset-ab.mjs"
+                           },
+                           {
+                               "SizeBytes":  17503,
+                               "SHA256":  "504E6D1A3728B1BFACF32536566951C0F433D7FC3D23645274A4D75B93E6D7A9",
+                               "RelativePath":  "scripts\\qa-vessel-cards.mjs"
+                           },
+                           {
+                               "SizeBytes":  11100,
+                               "SHA256":  "D120D1419938B36E9232CC61D473A1933361341509717495C19B7A9711E3D0D4",
+                               "RelativePath":  "scripts\\qa-vessel-datum.mjs"
+                           },
+                           {
+                               "SizeBytes":  15652,
+                               "SHA256":  "B45E0F08FE4F302767E140F3B157C19ED10E04FA1549D141C3237D3759D96C6F",
+                               "RelativePath":  "scripts\\qa-view-target-prewarm.mjs"
+                           },
+                           {
+                               "SizeBytes":  52911,
+                               "SHA256":  "35F94F1B0F8757899DC1B593CFB2E65F56F5F5A401001228148A99E522BBCF47",
+                               "RelativePath":  "scripts\\qa-voice-routing.mjs"
+                           },
+                           {
+                               "SizeBytes":  4750,
+                               "SHA256":  "8C826D6B84D27CA73D42A80FB63BD7BCE9A2994560A74904055D5C257673302F",
+                               "RelativePath":  "scripts\\qa-voice-wav.mjs"
+                           },
+                           {
+                               "SizeBytes":  1362,
+                               "SHA256":  "9751E5641766F12B5F74507479520F5C99148D3C01C1FFAD33164A4109953D21",
+                               "RelativePath":  "scripts\\read-dotenv-value.mjs"
+                           },
+                           {
+                               "SizeBytes":  3976,
+                               "SHA256":  "C5D3E4D59DC7D83D3258F31CB35896DA488CCE92EB0B37453378FE44EAFD4C5E",
+                               "RelativePath":  "scripts\\run-unit-tests.mjs"
+                           },
+                           {
+                               "SizeBytes":  9623,
+                               "SHA256":  "81AE69CEE6DE0D7CC78F99B9106142B594B3BFE19A39776C0A82F6CB5D9F9EBD",
+                               "RelativePath":  "scripts\\setup-doctor.mjs"
+                           },
+                           {
+                               "SizeBytes":  1937,
+                               "SHA256":  "CBCBC004B32F295B64DFAC0B89267A2FE4B21655F34A6273271B369957998D42",
+                               "RelativePath":  "scripts\\shot-sink.mjs"
+                           },
+                           {
+                               "SizeBytes":  220367,
+                               "SHA256":  "545653817E102E8A82D572B1640D42255C7E168B2961106DDBE48D6561DDC566",
+                               "RelativePath":  "scripts\\track-regression.mjs"
+                           },
+                           {
+                               "SizeBytes":  7937,
+                               "SHA256":  "0F5BF43867872B4705E1B3AB02AFFCED8939FD3BD8C0834C463DC30C5EFE3EEE",
+                               "RelativePath":  "SECURITY.md"
+                           },
+                           {
+                               "SizeBytes":  51055,
+                               "SHA256":  "BF89B2906910183D0F0A2261F724720C4473B41221C3941DC53BE1048D3B8D97",
+                               "RelativePath":  "src\\annotations\\annotationEngine.js"
+                           },
+                           {
+                               "SizeBytes":  24834,
+                               "SHA256":  "55408D4E034F30F20A214C34B9F5B899413A3E62704393F32890FFF1EF0EA816",
+                               "RelativePath":  "src\\annotations\\annotationEngine.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  8909,
+                               "SHA256":  "FC7C3542A07CD0A052EA2325922C483B4F20E22028E3B62206448CE67DE9F6D4",
+                               "RelativePath":  "src\\annotations\\annotationGeoJson.js"
+                           },
+                           {
+                               "SizeBytes":  6726,
+                               "SHA256":  "96E2E43122437E9BF47915128226E763EE4BAA880545FCBB1682968E1941D1C4",
+                               "RelativePath":  "src\\annotations\\annotationGeoJson.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  96647,
+                               "SHA256":  "1766E526D4BE55969788F5EC08968B33C4B8591FF183174DE640465A0B27882B",
+                               "RelativePath":  "src\\annotations\\annotationResolver.js"
+                           },
+                           {
+                               "SizeBytes":  15025,
+                               "SHA256":  "F07413B414710B425CDA416943AC9558F54331E94328C21785CFFBFB26AECD5F",
+                               "RelativePath":  "src\\annotations\\annotationResolver.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5811,
+                               "SHA256":  "B1F7C6D9D1B3FC282A8033D4A02ECBE2D8E479A24CAB865B6056B40FC05B7102",
+                               "RelativePath":  "src\\annotations\\hybridAnnotationRenderer.js"
+                           },
+                           {
+                               "SizeBytes":  17284,
+                               "SHA256":  "FCF9A42989BA6CC40BE41513EA26B41164EFB08637089A3665A7FA63C2EA3B0E",
+                               "RelativePath":  "src\\annotations\\hybridAnnotationRenderer.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1008,
+                               "SHA256":  "DB416C2AB14E2725D1381CDF8CF8CEFFBF16494F20DC5DCA07A2F890866B17C2",
+                               "RelativePath":  "src\\annotations\\index.js"
+                           },
+                           {
+                               "SizeBytes":  31620,
+                               "SHA256":  "102DE5C4C7320A7559C5C54FC117BE6C28C4DD56E7FC6C51E2FFC409905BAFED",
+                               "RelativePath":  "src\\annotations\\screenAnnotationRenderer.js"
+                           },
+                           {
+                               "SizeBytes":  11265,
+                               "SHA256":  "53038983CB44EE350D3AF49C12ABEAC37F522ABDD45FA5F42F87DC3ACE9B3B68",
+                               "RelativePath":  "src\\annotations\\screenAnnotationRenderer.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  18488,
+                               "SHA256":  "5F3B5D426B0FC7F67815B292121A7D8BD6102C88F2B679374013A65F7B28385A",
+                               "RelativePath":  "src\\annotations\\worldAnnotationRenderer.js"
+                           },
+                           {
+                               "SizeBytes":  2966,
+                               "SHA256":  "94AC2198B4837E9691C56B29F8B6F6CE258B12EB3669C59A69CB54A0DF88B69A",
+                               "RelativePath":  "src\\bloom.js"
+                           },
+                           {
+                               "SizeBytes":  1649,
+                               "SHA256":  "D9181DFF661036E6FB52C3BF17742AAFA7F9E4D01A6DFDF5A042C057B08B9819",
+                               "RelativePath":  "src\\browserModuleBoundary.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1973,
+                               "SHA256":  "0239E59FF47EB148458170943AC64049D6E1E0A55CFB6F0FBBC16DBF965CC413",
+                               "RelativePath":  "src\\camera.js"
+                           },
+                           {
+                               "SizeBytes":  17622,
+                               "SHA256":  "07DE8555860F2C5BDDBAEF59C5CCE640CF3DDAB9876ECF46D3CB3B089F992718",
+                               "RelativePath":  "src\\cameraHandoff.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  55411,
+                               "SHA256":  "0FB385172325E24B41AC528640D788FDF561B14BCC9B63F7E6C1E709FA4CD83B",
+                               "RelativePath":  "src\\cameraVerbs.js"
+                           },
+                           {
+                               "SizeBytes":  3121,
+                               "SHA256":  "9D9A33998AF979D506B7888D14081EA0636648D0742590262C76D2442E3AE699",
+                               "RelativePath":  "src\\cctvFocusPolicy.js"
+                           },
+                           {
+                               "SizeBytes":  3025,
+                               "SHA256":  "38417227385A95B5FF2F51A9D2DE6274F529B8556CE853DE9C021F49491C4D24",
+                               "RelativePath":  "src\\cctvFocusPolicy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  2769,
+                               "SHA256":  "0CE65D21E9063A77D1E38838D6AA3A8F7459D17B90BA111B0DDC84D74F0A94A6",
+                               "RelativePath":  "src\\cctvFocusRequest.js"
+                           },
+                           {
+                               "SizeBytes":  2300,
+                               "SHA256":  "6CE768A535D708DA8DA1B4384254857B9D06C7FF8F1A06A38A7D2C03747AE2AF",
+                               "RelativePath":  "src\\cctvFocusRequest.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  28639,
+                               "SHA256":  "DA46CEB974CD792E0531700DB0B49914DA6A596E575A823D5C23A5642272FD6F",
+                               "RelativePath":  "src\\celestialRing.js"
+                           },
+                           {
+                               "SizeBytes":  6076,
+                               "SHA256":  "8860F86376BCA901DEC4EFC03A43E9D31AB41CD961AEF5C63B35E32437F48208",
+                               "RelativePath":  "src\\celestialRing.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  18448,
+                               "SHA256":  "20E957A11B7C8942701B0C2BF84DB65307CCA3F7D15A3B14DC13DFC932B76105",
+                               "RelativePath":  "src\\cockpitCloudEffects.js"
+                           },
+                           {
+                               "SizeBytes":  1849,
+                               "SHA256":  "F0C15F94FB67988C19626952199E346EA8E2DC6692F7DC6C0127017C45AADE0E",
+                               "RelativePath":  "src\\cockpitCloudEffects.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  48387,
+                               "SHA256":  "8D9D797ECFAB163C00CF2ED7EA9C35443681661A43A1896B81F167E9AAF55555",
+                               "RelativePath":  "src\\cockpitMarkup.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  13443,
+                               "SHA256":  "A1F79F2FFC87BAB0886073080A372D9DAAE506FCBAB7EF52D079C5578B773B4E",
+                               "RelativePath":  "src\\cockpitMath.js"
+                           },
+                           {
+                               "SizeBytes":  13519,
+                               "SHA256":  "47D797E23F601A5F7CD6CAE8839DC2D7ACD8967FA387EE0A72E7FD184A7B8367",
+                               "RelativePath":  "src\\cockpitMath.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3413,
+                               "SHA256":  "3B8CEAB901BCB75AB3837B81555C9CA87FCF2199FBD05D145969C8FB74DF5CFF",
+                               "RelativePath":  "src\\cockpitTracking.js"
+                           },
+                           {
+                               "SizeBytes":  8899,
+                               "SHA256":  "8BA8A0871CD344301A278DF819BE719A225AC7A8757775C2D588A86CBD29C722",
+                               "RelativePath":  "src\\cockpitTracking.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3089,
+                               "SHA256":  "B230B249E6E093FAB3C9F7D37B27D7447217CFCB2EDFF47FA3110AE841B079F3",
+                               "RelativePath":  "src\\cockpitUtilityLayout.js"
+                           },
+                           {
+                               "SizeBytes":  2999,
+                               "SHA256":  "92ED41C5D4D11C65B721E338476BAA62453AD8F822B34B720B02A210B4A01FE5",
+                               "RelativePath":  "src\\cockpitUtilityLayout.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1566,
+                               "SHA256":  "D011E7EBC5A4F945665E26279B78E2DCDB6301330ED7096600D09C386923F12B",
+                               "RelativePath":  "src\\cockpitVisionPolicy.js"
+                           },
+                           {
+                               "SizeBytes":  3406,
+                               "SHA256":  "E47E175596CD12A1F2FDF5D5F127B090C020590955284B588DA4E035C3DE2E1B",
+                               "RelativePath":  "src\\cockpitVisionPolicy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  8305,
+                               "SHA256":  "430C7234E489155F548BF6AAA0DC40D0D7583E4CE27E2044245607FEC47AD530",
+                               "RelativePath":  "src\\contactsDetectionPolicy.js"
+                           },
+                           {
+                               "SizeBytes":  16355,
+                               "SHA256":  "98D3CE6AE79C215F20401A32EFB56ED5FECB3A5E7BEC72D8E9607E0E832640E4",
+                               "RelativePath":  "src\\contactsDetectionPolicy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  16152,
+                               "SHA256":  "9064B905EAE9BDB3AF1407AAE00588F842C6DD395C8C33B22061C0007504264D",
+                               "RelativePath":  "src\\contextModePolicy.js"
+                           },
+                           {
+                               "SizeBytes":  22244,
+                               "SHA256":  "4A54CED739344E00AEF94C499E44CB9379F979CAEC7D2E12662936879F848E72",
+                               "RelativePath":  "src\\contextModePolicy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  19126,
+                               "SHA256":  "945036BDC2172500C7D15F64C2E5512B2BAAE8CB97B65BA9AF09D6B89AB198DB",
+                               "RelativePath":  "src\\contextSessionOrdering.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  27883,
+                               "SHA256":  "B43DB6C7E69EF59B9F0BF0D3B2729F41C1ADBFCB0D660E0F99A9DCFB7C7E65F9",
+                               "RelativePath":  "src\\creditAttribution.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3122,
+                               "SHA256":  "41FD166561F2B3988ADC6B95EF9B5D79DD92724FBD91CB716C77A219BC54ACAB",
+                               "RelativePath":  "src\\data\\adsbLolFallback.js"
+                           },
+                           {
+                               "SizeBytes":  1471,
+                               "SHA256":  "C00762D5B0BD4B7CA17B9F1B845622807D0CF1259747E7A4E60DB204598608D5",
+                               "RelativePath":  "src\\data\\adsbLolFallback.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  8021,
+                               "SHA256":  "BFD6C17E63EBDD2627E4E2E0627BE291B5C28580EEBC312B9026186BF98BE5E1",
+                               "RelativePath":  "src\\data\\aircraftClass.js"
+                           },
+                           {
+                               "SizeBytes":  3409,
+                               "SHA256":  "C37016C9415D0552CC874FA26CEC64F34DA8E94DA1676C1659AA442B4F1C2DEA",
+                               "RelativePath":  "src\\data\\aircraftClass.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  14286,
+                               "SHA256":  "32C8AD2BCD97F80F51E7D9875CEF17D55D3FBFD4FEA6C9257B5C82B242E50306",
+                               "RelativePath":  "src\\data\\aircraftIcons.js"
+                           },
+                           {
+                               "SizeBytes":  701,
+                               "SHA256":  "FFA50AD7028DF38C357CE683261A2A321671C6BD6CC57723B7FD5C8BF6EEACE4",
+                               "RelativePath":  "src\\data\\aircraftMeta.js"
+                           },
+                           {
+                               "SizeBytes":  881,
+                               "SHA256":  "F9F67CE82E65510F4DB7FA4D6F0B901ECA972EE72AB47E6E6D206681BA4AD81A",
+                               "RelativePath":  "src\\data\\aircraftMeta.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  655,
+                               "SHA256":  "4A1A51209EC70D96E1E68F7BEEC27C895E4CAB5CF76C018B88FA5621FA9C2F78",
+                               "RelativePath":  "src\\data\\aircraftNearbyPolicy.js"
+                           },
+                           {
+                               "SizeBytes":  517,
+                               "SHA256":  "48EAB9DDFAC58305FB19AEC345C45FBEA1456343D36B9ED8CC74C4A107D763AC",
+                               "RelativePath":  "src\\data\\aircraftNearbyPolicy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  8439,
+                               "SHA256":  "E2435E3FAF7CC65A59F86D3D3BB6C9BA4ED3E46125B8BFDA0F1C8C773A9F3E46",
+                               "RelativePath":  "src\\data\\aircraftRecession.js"
+                           },
+                           {
+                               "SizeBytes":  5380,
+                               "SHA256":  "E1B5366DE03637D8B09C7D0E2F022B1AFF7B8A16E8200056313749FC7169F4B9",
+                               "RelativePath":  "src\\data\\aircraftRecession.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  2056,
+                               "SHA256":  "25B712F670160A54361B241B49C1AD278AB4E82161AA95AEF4D2926B93E072C4",
+                               "RelativePath":  "src\\data\\aisLiveVessels.analyst.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  79363,
+                               "SHA256":  "4817730C212E7A773345DA64AC839B685559058C0FA5F9DC556A477DD33D6687",
+                               "RelativePath":  "src\\data\\aisLiveVessels.js"
+                           },
+                           {
+                               "SizeBytes":  59028,
+                               "SHA256":  "1EA349C6995A1EA7E827329740D4B4EA272654073EE106F31BE6BA4A66E56820",
+                               "RelativePath":  "src\\data\\aisLiveVessels.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  19321,
+                               "SHA256":  "DB5BA9B758E0D3AE4B39F8FCA72CD8205CDC690C7BCD55C6822033716ABE48D9",
+                               "RelativePath":  "src\\data\\aisStreamAdapter.js"
+                           },
+                           {
+                               "SizeBytes":  28558,
+                               "SHA256":  "8E8929B1A5E361A5914545013E36D27E0B2704E880A5253E9C36C3BE523C5483",
+                               "RelativePath":  "src\\data\\aisStreamAdapter.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  18648,
+                               "SHA256":  "4AEF0D99A1FEA4507D4E0A26552CA7BD144D082563D18FB4328EAB346FFE76FC",
+                               "RelativePath":  "src\\data\\aisWatchdog.js"
+                           },
+                           {
+                               "SizeBytes":  32060,
+                               "SHA256":  "943E0AF5BA42040285FC3A05B7E6B250F168A52BDBC29B99613490E92FFE7921",
+                               "RelativePath":  "src\\data\\aisWatchdog.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5800,
+                               "SHA256":  "C3AD6206E75DE1051AC0B64CCA39FE78CF700583F322A1072353DDD31AE80C0B",
+                               "RelativePath":  "src\\data\\aisWatchdogTransport.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  11112,
+                               "SHA256":  "DE84D8B0EA487F45861A9480A04DEE6CCA2A01612D06A2FB13BC8E7E1216A5FB",
+                               "RelativePath":  "src\\data\\analystEngine.js"
+                           },
+                           {
+                               "SizeBytes":  9346,
+                               "SHA256":  "E474CBF9589CCCC44493DF0715B7C210F46FB9FE5D33DA1641B7CA5F7F6239B7",
+                               "RelativePath":  "src\\data\\analystEngine.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  58494,
+                               "SHA256":  "4D919B1BB0321732669CE1F21824B23A4360DB4A6E26A5267EA7102312C57956",
+                               "RelativePath":  "src\\data\\bikeshare.js"
+                           },
+                           {
+                               "SizeBytes":  2900,
+                               "SHA256":  "74C6556F40575C6832293E8C2D830F0B7139BC5B24ECB30F8E7DE9ABB9C8596E",
+                               "RelativePath":  "src\\data\\bikeshare.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  198181,
+                               "SHA256":  "5AF7D47CECE5BCB074F31DC7088DF7DD81B52F17EDBBCEB7BFA1E4385CD3D461",
+                               "RelativePath":  "src\\data\\cctv.js"
+                           },
+                           {
+                               "SizeBytes":  49770,
+                               "SHA256":  "5B638D79E2192F5567D012F74FCF30B4EF37888C42BB1BF7CE6BE48CB210C22B",
+                               "RelativePath":  "src\\data\\cctv.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  16781,
+                               "SHA256":  "3DF4738FD24F3273F47C41C6827A471BE320806F7A69781034DC28B1E23A777B",
+                               "RelativePath":  "src\\data\\cctvCards.js"
+                           },
+                           {
+                               "SizeBytes":  13417,
+                               "SHA256":  "5F96AE25BDE1E1EC65D521CE6DAF02F2BBB896E0E8F568DC682FA568616FAC14",
+                               "RelativePath":  "src\\data\\cctvCards.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  23434,
+                               "SHA256":  "EE0C08674470254DAA71B22A840E011B1932D755CC46F5F0C0AC61E6ABA608BF",
+                               "RelativePath":  "src\\data\\cctvGizmo.js"
+                           },
+                           {
+                               "SizeBytes":  4195,
+                               "SHA256":  "7FDEEC256E90BC70463E08DB0101AB45BB6A119F169E3B15DEE0CB3553DA4B40",
+                               "RelativePath":  "src\\data\\cctvGizmo.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  18507,
+                               "SHA256":  "5A7BC21C7B503E21AB95CD2C996B1B419B9D09346B2F993DABC607D146942656",
+                               "RelativePath":  "src\\data\\cctvLod.js"
+                           },
+                           {
+                               "SizeBytes":  20791,
+                               "SHA256":  "2FD7BBF67C9C1CA4FF8B518065B1D3311CF3EECEBCC711D9452E48795C7BCE48",
+                               "RelativePath":  "src\\data\\cctvLod.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1456,
+                               "SHA256":  "19E3D167D963D8645B0991DC85C06E1A8BB182D0DAA26CB3A5188457A378BC80",
+                               "RelativePath":  "src\\data\\cctvProxy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5075,
+                               "SHA256":  "049A4BDC9133F1FC3B5457BAF2C27BA337ECE509ADA14335C8B7DC42F5A2CD34",
+                               "RelativePath":  "src\\data\\cctvViewshed.js"
+                           },
+                           {
+                               "SizeBytes":  5494,
+                               "SHA256":  "9B6B32F7E0E94AA73CEBBD72133B293F42FC9E57867F3B4A079B2860C76D33C9",
+                               "RelativePath":  "src\\data\\cctvViewshed.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1440,
+                               "SHA256":  "68295B032E0E7FE9D9BB3A2CC188F39EF63ABA2A00FA95F0F1C6F5AF121991FB",
+                               "RelativePath":  "src\\data\\cockpitAirLod.js"
+                           },
+                           {
+                               "SizeBytes":  1051,
+                               "SHA256":  "7A02ABFC11CAF46E3CCE9126C276124A9E94E5AAB7E7EFD354751C5CE3781695",
+                               "RelativePath":  "src\\data\\cockpitAirLod.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1721,
+                               "SHA256":  "E190C70ED84D60607018A99D5DD2F6E914DF5E3E37459A4874F3A0349A245011",
+                               "RelativePath":  "src\\data\\cockpitContactDot.js"
+                           },
+                           {
+                               "SizeBytes":  6608,
+                               "SHA256":  "98C3DCA74C2D2A03738C6C657E61F2F05670EBB7A7D9CA206D5869421D2BB3A1",
+                               "RelativePath":  "src\\data\\cockpitDetectionSubjects.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5879,
+                               "SHA256":  "CA39B31E642579E202596F9D5D54D0910602B91002F2B12BC4A7DD838D8E2C79",
+                               "RelativePath":  "src\\data\\cockpitModels.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5137,
+                               "SHA256":  "842665D570C18611CE9ABAA34AEB35BC1AE6A916D7E1E44E68A8441AD73B81DC",
+                               "RelativePath":  "src\\data\\contactMatch.js"
+                           },
+                           {
+                               "SizeBytes":  5622,
+                               "SHA256":  "261B733D7C1253D94BD41EDC352768278905551C154EAA891C5AB5C1687FFB70",
+                               "RelativePath":  "src\\data\\contactMatch.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  6897,
+                               "SHA256":  "E302125B7FC01F857F311751A8E983E7F234FEC5AAAA44301A3059DFCF26C422",
+                               "RelativePath":  "src\\data\\contextStore.js"
+                           },
+                           {
+                               "SizeBytes":  7459,
+                               "SHA256":  "38221D60950F8F28BB71BB0778557C3A127753879C1A3A7F31208AAF56D6292C",
+                               "RelativePath":  "src\\data\\contextStore.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  9395,
+                               "SHA256":  "1A32A263E19A6979EBF1B8AC615DF9C362A429723682FB53388B817A91DABE9E",
+                               "RelativePath":  "src\\data\\dataCredits.js"
+                           },
+                           {
+                               "SizeBytes":  56052,
+                               "SHA256":  "AA5F979F25A423016A324EC84A3C23D43258BFBB9271F528AC1C55DD739102B2",
+                               "RelativePath":  "src\\data\\detection.js"
+                           },
+                           {
+                               "SizeBytes":  3532,
+                               "SHA256":  "8A7707274278FCEBE94A2E1E21D19BE218B3C3D45FE2983C2B7941AD790F7205",
+                               "RelativePath":  "src\\data\\detectionCohort.js"
+                           },
+                           {
+                               "SizeBytes":  1579,
+                               "SHA256":  "E2BA1DD358069EE36763F61009CA822F0D41BB24C6F8ADAB8C262C9470057242",
+                               "RelativePath":  "src\\data\\detectionCohort.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  10337,
+                               "SHA256":  "E4853C07E3ADA009AA80795E8E977E2D4776D98A8DB344C0B9FCE9E3213C2F62",
+                               "RelativePath":  "src\\data\\detectionDraw.js"
+                           },
+                           {
+                               "SizeBytes":  6995,
+                               "SHA256":  "D4930E45569BC3B59514A34EC8FD011A34FFD583557B592489D8F319D84A374E",
+                               "RelativePath":  "src\\data\\detectionDraw.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  33871,
+                               "SHA256":  "035CAEAD75D2C8DBA6BDCEBE1B400F73A8D73C483C71C6BF18A3AD0CA8E84FA6",
+                               "RelativePath":  "src\\data\\detectionHost.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  10064,
+                               "SHA256":  "31909D4BBB6A5F65FB0F0625B2824F178D7A639F5EFC4549B3D891B0092A422E",
+                               "RelativePath":  "src\\data\\detectionPolicy.js"
+                           },
+                           {
+                               "SizeBytes":  9037,
+                               "SHA256":  "FE051F414C7EE0CB59CEEB5446A5242410D68B70FDD09FCC4FB41EF0E5CA3820",
+                               "RelativePath":  "src\\data\\detectionPolicy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  533,
+                               "SHA256":  "B0B5EB2FCD46667AC38A80969A6D8B0C72CAD04A7957A99377B2780AD42F15D2",
+                               "RelativePath":  "src\\data\\detectionPresentation.js"
+                           },
+                           {
+                               "SizeBytes":  1177,
+                               "SHA256":  "75895560A3A398339514F422A0923789EB52B7E966FC3A8D8D2B073A0686DE2A",
+                               "RelativePath":  "src\\data\\detectionPresentation.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  9141,
+                               "SHA256":  "CADFCBE4D94BC5C9C224E07AB134CBF8DAB28E294E98F38432DC99119581E2C5",
+                               "RelativePath":  "src\\data\\detectionRenderDemand.js"
+                           },
+                           {
+                               "SizeBytes":  25972,
+                               "SHA256":  "C4CC54766EA6F01B975AD668D663A7442EDD75CD4F3A80B99821969F9716599B",
+                               "RelativePath":  "src\\data\\detectionRenderDemand.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  2300,
+                               "SHA256":  "8E093DEFDEDA1CDA46855CC8F205F6FB0408DCE2B5D00ECD2E998E2DC3B87DE1",
+                               "RelativePath":  "src\\data\\directionText.js"
+                           },
+                           {
+                               "SizeBytes":  2997,
+                               "SHA256":  "48BD1FFBAACB385C3A02652322A6A0CDB0C247DCE509BB094FADCAE1A5D44BED",
+                               "RelativePath":  "src\\data\\directionText.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  10671,
+                               "SHA256":  "BFF66A85F996254D2829D715B195C1AF6CA6675A1CD2A36170A28EDB0EB152B5",
+                               "RelativePath":  "src\\data\\earthquakes.js"
+                           },
+                           {
+                               "SizeBytes":  13084,
+                               "SHA256":  "A164E981B7FE00331FA326A1C0CA4BC0EBBFD2ABF34EC5F200053B1FCFE0A306",
+                               "RelativePath":  "src\\data\\earthquakes.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  4095,
+                               "SHA256":  "DCE41497731CD8BE1027E99B55A4BB4F066D4B20ECE97C9C68A4A25A7DD96335",
+                               "RelativePath":  "src\\data\\fireAnchors.js"
+                           },
+                           {
+                               "SizeBytes":  6416,
+                               "SHA256":  "7120A81DC032A4A71EF6660A8076823D2417CC08444E46C81A0392F1FB91394F",
+                               "RelativePath":  "src\\data\\fireAnchors.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  4020,
+                               "SHA256":  "B365118216941A24CC7B8334708FB3AABBC4CCDD3C3ECE8315F7B9580657A4F5",
+                               "RelativePath":  "src\\data\\firmsAdapt.js"
+                           },
+                           {
+                               "SizeBytes":  3606,
+                               "SHA256":  "931A8F59A6071CF1199A866760015F0D92DF205FB27F794F1787D2AF4346ED70",
+                               "RelativePath":  "src\\data\\firmsAdapt.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  8051,
+                               "SHA256":  "D44BA6B3AE6B65B4BBD3820D08B97AAE26130A994ACFA7B56F26DA05DBA26214",
+                               "RelativePath":  "src\\data\\firmsCards.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  7141,
+                               "SHA256":  "C394CD7F43A58667F50D50F65E1DA86AAF24A1C8C6110A2928B0809C4B661F75",
+                               "RelativePath":  "src\\data\\firmsCsv.js"
+                           },
+                           {
+                               "SizeBytes":  5211,
+                               "SHA256":  "53BA80FD578E650F707CAA16BDFB60CD677F8AD46DF7643C6842FD4718ED8273",
+                               "RelativePath":  "src\\data\\firmsCsv.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  63172,
+                               "SHA256":  "FC2667C2BF097330903E414554768EB4EC8AD5AA08ADDF9EBFAA37AD36BB34D4",
+                               "RelativePath":  "src\\data\\firmsHeatmap.js"
+                           },
+                           {
+                               "SizeBytes":  2123,
+                               "SHA256":  "1D5A57C6F949BA55ADA3363A25F8B8F196E96968F766CFAF8AE752FB23FDD309",
+                               "RelativePath":  "src\\data\\firmsHeatmap.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  24553,
+                               "SHA256":  "8976E2A5213D358D7C324386E4A76026755090FE54B32AA34362F296AD448054",
+                               "RelativePath":  "src\\data\\firmsHorizonCull.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  13216,
+                               "SHA256":  "C85A7A2D8DAB0C7021E18A6902E0079F6D0E2FD61EEDA9362731B4CA07CF7777",
+                               "RelativePath":  "src\\data\\firmsInteraction.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1710,
+                               "SHA256":  "527ADB2E5E6E0BA7FF06582FDC40AB0F123A91CA03E35B2E6AC5D814F1B177E7",
+                               "RelativePath":  "src\\data\\firmsLabels.js"
+                           },
+                           {
+                               "SizeBytes":  1442,
+                               "SHA256":  "62992C65DFD9F20EFA4A5F35CC2A98BB4C0747DE07E00E063947566012FE076D",
+                               "RelativePath":  "src\\data\\firmsLabels.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3962,
+                               "SHA256":  "A8CE4C656EFE39B34959E3F2E4FF10CA39C7A4CAAACD1A77C3C432227CF11D15",
+                               "RelativePath":  "src\\data\\fixtures\\firms-viirs-noaa20-sample.csv"
+                           },
+                           {
+                               "SizeBytes":  494,
+                               "SHA256":  "D08A7845E2AE732CB60561DAC2058678284D916780355728BC6C4AC2113CF693",
+                               "RelativePath":  "src\\data\\fixtures\\README.md"
+                           },
+                           {
+                               "SizeBytes":  22980,
+                               "SHA256":  "2B613E5AB730AAF697C69B1D8CA905184FC9A33F99C40CE47C34F9FF886AC4E5",
+                               "RelativePath":  "src\\data\\fixtures\\tomtom-flow-austin-12-935-1686.pbf"
+                           },
+                           {
+                               "SizeBytes":  263180,
+                               "SHA256":  "865FEF08A777D5A4E17611090E1DAC1F6136C3F36B98EB7A4CCCA89A8A75122D",
+                               "RelativePath":  "src\\data\\flights.js"
+                           },
+                           {
+                               "SizeBytes":  66710,
+                               "SHA256":  "E609F8014347DF24D92EC2ED74072AF4F8699722A720325CB4DA16D58B96FCCE",
+                               "RelativePath":  "src\\data\\flights.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  9483,
+                               "SHA256":  "FFDA76884F55D2D4D1D4766E7227F694B9705162D08B525BCDDC5CDF4492914B",
+                               "RelativePath":  "src\\data\\flowMatch.js"
+                           },
+                           {
+                               "SizeBytes":  7263,
+                               "SHA256":  "C587363D2E2EFDD4B560C0692F5DFAE6D4B89BFB0EF42301ED56BC295553A953",
+                               "RelativePath":  "src\\data\\flowMatch.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  6417,
+                               "SHA256":  "35F5F841D3638C9AD2B54F954DEFECAF052DC48CB6ADABDF7687AA2E59625849",
+                               "RelativePath":  "src\\data\\flowTiles.js"
+                           },
+                           {
+                               "SizeBytes":  5871,
+                               "SHA256":  "A9CED3F9B1803B60F8CC31D2B649FAFF9D2A1B811D0ADCA82CCCBDB1FCB8589D",
+                               "RelativePath":  "src\\data\\flowTiles.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1393,
+                               "SHA256":  "4415DC4715508FBD5D54AB49BAD0EDF1CC2A8FFF0F0564B57AE4A1A74731AEE1",
+                               "RelativePath":  "src\\data\\focusAllocations.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  19323,
+                               "SHA256":  "642F790E6D3AAA7B165C07B358500FF71CD444FCA5CAD14B024D3B8F9ACF2488",
+                               "RelativePath":  "src\\data\\focusDeemphasis.js"
+                           },
+                           {
+                               "SizeBytes":  7888,
+                               "SHA256":  "8B479AA8D0036C2A6FB295821B2EC20973B0B034063D877FFEE2C8B64C1618CF",
+                               "RelativePath":  "src\\data\\focusDeemphasis.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3610,
+                               "SHA256":  "8BF34E59D4C8413CB1B2A33E80D9F8BFBC6172CFD26FBF93D959618687620610",
+                               "RelativePath":  "src\\data\\focusResumeGate.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  4265,
+                               "SHA256":  "036DA29427173FAF6577558F6157DD5C3649DD86DC22A8C2C2E7B4A224A238FA",
+                               "RelativePath":  "src\\data\\geoid.js"
+                           },
+                           {
+                               "SizeBytes":  7005,
+                               "SHA256":  "DBCC65D27C60BF1DBBA465ABFA6DB7CB963C93C4511CAFBE57867821B0F03910",
+                               "RelativePath":  "src\\data\\geoid.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  27852,
+                               "SHA256":  "C290C7D22CA88334B1448B1CC94CE9B372F475628A0E2BE2E2DBC883502381DE",
+                               "RelativePath":  "src\\data\\groundFloor.js"
+                           },
+                           {
+                               "SizeBytes":  29445,
+                               "SHA256":  "51486E6E5377104344E1A9DE7A8735FFA6532F5F83BF971B601E88B075A5E67B",
+                               "RelativePath":  "src\\data\\groundFloor.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  18400,
+                               "SHA256":  "6699B94252F5C24516D0AF70BB35EBEA99A1446835479B5135AFD651B10A97F7",
+                               "RelativePath":  "src\\data\\groundSnap.js"
+                           },
+                           {
+                               "SizeBytes":  12264,
+                               "SHA256":  "FAC433E1340A1FF11C57256010BF66D8FC90A84F881AAFBB0949196276C81393",
+                               "RelativePath":  "src\\data\\iconOrientation.js"
+                           },
+                           {
+                               "SizeBytes":  21070,
+                               "SHA256":  "C9A57240C07E972AC4879B9A9D2AEF47D60881A331AA1024BA89B1A0C26C2E01",
+                               "RelativePath":  "src\\data\\iconOrientation.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  981,
+                               "SHA256":  "4F7E411078420055401E5DB67891706FF650614CFE5EFBC0EDAE4B9D68D5201B",
+                               "RelativePath":  "src\\data\\installationFeedback.js"
+                           },
+                           {
+                               "SizeBytes":  1383,
+                               "SHA256":  "7B5DBBACF421CD2DC9E77BC8708FD7DDF0FE442209FD92C7D195EE83F9EE46FF",
+                               "RelativePath":  "src\\data\\installationFeedback.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  13636,
+                               "SHA256":  "670A56C7EAADB4F90212A63D5D27E6BAA96F2F34B3C7576916A46E4EF2C53EF8",
+                               "RelativePath":  "src\\data\\installationProxy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  2432,
+                               "SHA256":  "9143390DAEF5C70DB65B588103F8614B2717F9F9966FDA246ADED6BA846C1D62",
+                               "RelativePath":  "src\\data\\issPass.js"
+                           },
+                           {
+                               "SizeBytes":  1792,
+                               "SHA256":  "D1E78D24D0F7B6DC7E29F1DC38598F9608EC06E6432119B69266BF210791A85B",
+                               "RelativePath":  "src\\data\\issPass.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  41323,
+                               "SHA256":  "86CC0FAB84963A9F0AB168CF0D9F3E44AC00401D2650F91F883CEC1F97CE5275",
+                               "RelativePath":  "src\\data\\labelArbiter.js"
+                           },
+                           {
+                               "SizeBytes":  20084,
+                               "SHA256":  "853BE7496E99D640DB2DE52EA8224FB7842E0D06107DD4B388896E0EEB8E82E7",
+                               "RelativePath":  "src\\data\\labelArbiter.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  14599,
+                               "SHA256":  "A8E5DAD36E3BE203E65E66C99232E6170A5527245A8A669723629D3C5762C6E1",
+                               "RelativePath":  "src\\data\\labelArbiterDifferential.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  45366,
+                               "SHA256":  "C37DC1EEF89BA9F3EEA7A29245FB421516A51DB560FDA35431195822272DEAF2",
+                               "RelativePath":  "src\\data\\layerState.js"
+                           },
+                           {
+                               "SizeBytes":  67133,
+                               "SHA256":  "959FE40350F155625FB02812D1886CF67BE91509BB636431DA7AE2880ECDF02A",
+                               "RelativePath":  "src\\data\\layerState.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  730321,
+                               "SHA256":  "034F57CD88BBFC53E78B92328A044365DEE7571B1F66E6E13278D54691244EFA",
+                               "RelativePath":  "src\\data\\local_data\\dams\\dams.geojson"
+                           },
+                           {
+                               "SizeBytes":  730280,
+                               "SHA256":  "F2B6F3166BEE6DBA4F0B569553A14C84FAEB0048EB522BACD4D9C78E93D30D30",
+                               "RelativePath":  "src\\data\\local_data\\dams\\dams.geojsonl"
+                           },
+                           {
+                               "SizeBytes":  621,
+                               "SHA256":  "38FD328C121AA798BD9E3D770ACB8BF9602058B18E4E8806DC2DE5A9F58AB401",
+                               "RelativePath":  "src\\data\\local_data\\dams\\README.md"
+                           },
+                           {
+                               "SizeBytes":  2561978,
+                               "SHA256":  "089144857A5CA001B0238C8F9316A3CC229B6C79A73558AC2660E206E0E59968",
+                               "RelativePath":  "src\\data\\local_data\\datacenters\\datacenters.geojsonl"
+                           },
+                           {
+                               "SizeBytes":  760,
+                               "SHA256":  "F132B903C041A15E6D898E379E86004382DFAC9BC86B506C9F30647630682089",
+                               "RelativePath":  "src\\data\\local_data\\datacenters\\README.md"
+                           },
+                           {
+                               "SizeBytes":  633342,
+                               "SHA256":  "3FD509366F15AB086755A62A99150F65DA407572E48AD4C602172FEA716FA74F",
+                               "RelativePath":  "src\\data\\local_data\\natural_earth\\marine.json"
+                           },
+                           {
+                               "SizeBytes":  2000,
+                               "SHA256":  "5C8D4073E7490FBCBB0943B722DF0B5A3F54FA8A8ECA0498577161C425F9CF51",
+                               "RelativePath":  "src\\data\\local_data\\natural_earth\\README.md"
+                           },
+                           {
+                               "SizeBytes":  1987099,
+                               "SHA256":  "0C7652965095DB0365A9BDF3170994B48E0138A781AB4110AF533F42FE9F48C7",
+                               "RelativePath":  "src\\data\\local_data\\natural_earth\\regions.json"
+                           },
+                           {
+                               "SizeBytes":  222167,
+                               "SHA256":  "55C538680628B1ED5AFA6627EC3ABD83C3BA70B5DD4912A46D3D0F6892F807E5",
+                               "RelativePath":  "src\\data\\local_data\\neighborhoods\\san-francisco.json"
+                           },
+                           {
+                               "SizeBytes":  2867,
+                               "SHA256":  "083F5CE50D27AA6EACA3A82FD7571C23C1369BB9339F33B21D4D9FF943CA2C38",
+                               "RelativePath":  "src\\data\\local_data\\neighborhoods\\SOURCE.md"
+                           },
+                           {
+                               "SizeBytes":  728308,
+                               "SHA256":  "3D28DB104E57982E7AE67FABE66F2FF8DC01E137458454E0DE0032A8878C6BAD",
+                               "RelativePath":  "src\\data\\local_data\\telegeography_submarine_cables\\cable-geo.json"
+                           },
+                           {
+                               "SizeBytes":  359269,
+                               "SHA256":  "11FC154189DB51237099FFE1DA2183984D666A906E5ED0E89B86421192EB622B",
+                               "RelativePath":  "src\\data\\local_data\\telegeography_submarine_cables\\landing-point-geo.json"
+                           },
+                           {
+                               "SizeBytes":  1460,
+                               "SHA256":  "512BFE853AF9BACAF29CC09A55082EDE42EBEA303DECB1CB51C20E5304CA25AA",
+                               "RelativePath":  "src\\data\\local_data\\telegeography_submarine_cables\\README.md"
+                           },
+                           {
+                               "SizeBytes":  1113,
+                               "SHA256":  "16D7EA86BF43AB286A07612B5AE23BD9BAC7D21F28D598BF41754B3A1A94DC31",
+                               "RelativePath":  "src\\data\\local_data\\telegeography_submarine_cables\\source.json"
+                           },
+                           {
+                               "SizeBytes":  34957,
+                               "SHA256":  "AFF034F199547AA00859D1910670D8F23782EDB6167963A70B15833B58C5D1D2",
+                               "RelativePath":  "src\\data\\localGeojson.js"
+                           },
+                           {
+                               "SizeBytes":  35800,
+                               "SHA256":  "0380CBF17995C44014CE9E4B30133FF905021A6D308E183CE7257B78AB57B843",
+                               "RelativePath":  "src\\data\\localGeojson.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1422,
+                               "SHA256":  "B64B8E3B23C57F64FA7F878BE9AD5A3A9E0475D89F16CCFB4AE6F5438409035C",
+                               "RelativePath":  "src\\data\\localLayers.js"
+                           },
+                           {
+                               "SizeBytes":  90326,
+                               "SHA256":  "290949B2CF7D7C55D849F1A3FD2B96EE023989D91A40587C4E05D583A2061068",
+                               "RelativePath":  "src\\data\\manager.js"
+                           },
+                           {
+                               "SizeBytes":  122203,
+                               "SHA256":  "773792E3E34D6D6B421032204EBA1718A838E1E5CFDB62A581750921AE2C0FBD",
+                               "RelativePath":  "src\\data\\manager.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  8672,
+                               "SHA256":  "B78CB729D47E646159B6A1E306CAA27B81BC3EEE4554D8EEC22F660B4F89B76F",
+                               "RelativePath":  "src\\data\\meshFloorSampler.js"
+                           },
+                           {
+                               "SizeBytes":  6233,
+                               "SHA256":  "7D1F409782B38530B4DB6EE45081E91B172F8C91780972F332E3864AD27CB309",
+                               "RelativePath":  "src\\data\\meshFloorSampler.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  80384,
+                               "SHA256":  "13AFC4A9FD840175AD1BA32D1E72BE2E833693C83739C74329D67797DAB2264C",
+                               "RelativePath":  "src\\data\\militaryAwareness.js"
+                           },
+                           {
+                               "SizeBytes":  115534,
+                               "SHA256":  "E32EA7D6AEFDE3992CD36FE26DCC79775F0213E54B6984D0BACBF7B726BB80C4",
+                               "RelativePath":  "src\\data\\militaryAwareness.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5297,
+                               "SHA256":  "E70DBBFFE794621FFCB987502CFA4817966AD3FCC4E50B391F4F7A1E235B98EC",
+                               "RelativePath":  "src\\data\\militaryAwarenessEngine.js"
+                           },
+                           {
+                               "SizeBytes":  4421,
+                               "SHA256":  "EB4F18DEC45DDB429D724936F8F6F96C9C13575F864EA99B68FE4A87AF9D6402",
+                               "RelativePath":  "src\\data\\militaryAwarenessEngine.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  185513,
+                               "SHA256":  "4A76E6AA492A4A74851D85C14A8E218A25E567429D22A90E93DA1643D1BC8D4F",
+                               "RelativePath":  "src\\data\\militaryFlights.js"
+                           },
+                           {
+                               "SizeBytes":  21106,
+                               "SHA256":  "2E61F17C85CEEC9572DA1C067EE2C36D2EB7691C1444F14E3994EF0354740E08",
+                               "RelativePath":  "src\\data\\militaryFlights.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  6428,
+                               "SHA256":  "365E102D66971B668B51112AA1A713AF9E1356065862CAA5A4418F963A38E139",
+                               "RelativePath":  "src\\data\\militaryInstallationData.js"
+                           },
+                           {
+                               "SizeBytes":  7859,
+                               "SHA256":  "729D43C680652CE0FC0BCDE32C2F34814951AC1D873A3D74CE5F9478A47F0509",
+                               "RelativePath":  "src\\data\\militaryInstallationData.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  28354,
+                               "SHA256":  "46D55CE716EA60BF4CB650DA5C30E1C723B2175BB98593DCE11E32B658D93C08",
+                               "RelativePath":  "src\\data\\militaryInstallations.js"
+                           },
+                           {
+                               "SizeBytes":  33369,
+                               "SHA256":  "9FB58C933871D8F99FCC76B04C613B08A38BA2FA0392F56999464487C30D317C",
+                               "RelativePath":  "src\\data\\militaryInstallations.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  4457,
+                               "SHA256":  "9921093C71AC705A77B26A16AE19597377F4D8D46118495304739A390E4901C1",
+                               "RelativePath":  "src\\data\\militaryRegistry.js"
+                           },
+                           {
+                               "SizeBytes":  2346,
+                               "SHA256":  "B078986606EE3FE4595976B7845226661894717BFFB72B812BBE32FFAFE27658",
+                               "RelativePath":  "src\\data\\militaryRegistry.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3094,
+                               "SHA256":  "F9A9116D0315F05FB6E0FE0AF778FAD9E6D9CA4F717D6214352892C180C0A83A",
+                               "RelativePath":  "src\\data\\modelMatrix.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  44843,
+                               "SHA256":  "ACA554B7DC89526437D55E604B8A1268210C1E1A9B3000CF1CA45A4D53763AA0",
+                               "RelativePath":  "src\\data\\modelScale.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  14358,
+                               "SHA256":  "615CC51E36D280CF371F0184C0F4C95F8747C9B25EC3599F34D31DAF42DC495C",
+                               "RelativePath":  "src\\data\\modelVisualAnchor.js"
+                           },
+                           {
+                               "SizeBytes":  19504,
+                               "SHA256":  "2A39ED740B9395ADE14851636EA6220A56747980049F7192BABB59D5469B211E",
+                               "RelativePath":  "src\\data\\motionModel.js"
+                           },
+                           {
+                               "SizeBytes":  15633,
+                               "SHA256":  "C9D3539559FDD80671B30786F0C27B9EA4A961BF987B31C5093FC55B53C54370",
+                               "RelativePath":  "src\\data\\motionModel.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  10704,
+                               "SHA256":  "982864A0EE27F9EE0F3DF1BDE935C74258E628EA72EBF8042253AC3FB557B263",
+                               "RelativePath":  "src\\data\\naturalEarthRegions.js"
+                           },
+                           {
+                               "SizeBytes":  7144,
+                               "SHA256":  "237AF5E3350FAFC7F79974F5AF4A64962E25FA657C0DC127092B1BCFA7793E56",
+                               "RelativePath":  "src\\data\\naturalEarthRegions.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  7175,
+                               "SHA256":  "068BA1ADDD582B0461264CACF73962D0CDA2E82D31805C0C42A3A57F30883F0F",
+                               "RelativePath":  "src\\data\\nearbyModelHandoff.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  7125,
+                               "SHA256":  "0E5AAB3D13194F82F84A09BE96AE96130FC118DF9408B672FB45C865555FFEAA",
+                               "RelativePath":  "src\\data\\neighborhoodPolygons.js"
+                           },
+                           {
+                               "SizeBytes":  4867,
+                               "SHA256":  "5CAF41BC5ECE13EF1A7D102BA1DF35ABAB91920A145FAE627487B6F9F5C3154C",
+                               "RelativePath":  "src\\data\\neighborhoodPolygons.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  8918,
+                               "SHA256":  "604302C07B1994BBC12C0ABC06310C7DB10ED28FD76A13DD3A80280AAA879E88",
+                               "RelativePath":  "src\\data\\overpassProxy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3221,
+                               "SHA256":  "C27D1E5EAE209F22A62460BC4BF51A0BE34EC0ABD1E573817C70A970CBEF93FD",
+                               "RelativePath":  "src\\data\\pickRegistry.js"
+                           },
+                           {
+                               "SizeBytes":  4385,
+                               "SHA256":  "1D7DF15AE1217626AA6F39525A31E39AB536E0EFAF43D22B47CA7A3EBADC530C",
+                               "RelativePath":  "src\\data\\pickRegistry.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  107681,
+                               "SHA256":  "B853F126A46A821E0B31E47CDDA8201B693C42FFD18665B78FEFA542083CE662",
+                               "RelativePath":  "src\\data\\radio.js"
+                           },
+                           {
+                               "SizeBytes":  70801,
+                               "SHA256":  "6F0BDCC119DE3C13689EDE99FF715D0E625B608DD8299904DB7FC6D0AB0FED14",
+                               "RelativePath":  "src\\data\\radio.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3540,
+                               "SHA256":  "702A5C83A0293CDE87BBF425BF7DFE0A59FAECA3B01DF06805F3DC84593FEA6C",
+                               "RelativePath":  "src\\data\\radioCountry.js"
+                           },
+                           {
+                               "SizeBytes":  1118,
+                               "SHA256":  "369DEDB18E4C7AE50B8C42123C1546C8A7AA1814A4B39EC9DFA9B76B2897C4FA",
+                               "RelativePath":  "src\\data\\radioCountry.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  19399,
+                               "SHA256":  "582A11E512997F6B0CCED92A5D78265D3A1E499DD5CC3BC0C6709898C22DF0C7",
+                               "RelativePath":  "src\\data\\radioProxy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5864,
+                               "SHA256":  "3E309C63B87845348339B80BDFB306A707B281491233A0707C7AAE7A94876F9C",
+                               "RelativePath":  "src\\data\\regionalBrief.js"
+                           },
+                           {
+                               "SizeBytes":  2924,
+                               "SHA256":  "57C3895B605ECD9652B317A691B0FB81A527EA26C7742CE1F2626A77DF41F8B1",
+                               "RelativePath":  "src\\data\\regionalBrief.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  4044,
+                               "SHA256":  "9115ED2E64EB041BEB6A132AB7EB7DD12D29CF731210093532405BD13308AA24",
+                               "RelativePath":  "src\\data\\regionalProxy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5200,
+                               "SHA256":  "A587A9D19E5107B86E52A6FAD6F3A45E1920D089D1234BA45FE8412645C9C737",
+                               "RelativePath":  "src\\data\\renderAltitude.js"
+                           },
+                           {
+                               "SizeBytes":  7906,
+                               "SHA256":  "CAC788BB47C1735EA93734948560729063599202F006E5853ECF13F51313D88E",
+                               "RelativePath":  "src\\data\\renderAltitude.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3339,
+                               "SHA256":  "5DB6E741C395D3FAAFF57F78385C1B0AC82616678A60AB5AB34DA10BDEEFD31C",
+                               "RelativePath":  "src\\data\\retryableLoad.js"
+                           },
+                           {
+                               "SizeBytes":  5774,
+                               "SHA256":  "80CE0CF79B3EBED75D00F80D64E8B1000AD97AC4918B897E1D72BF131158A028",
+                               "RelativePath":  "src\\data\\retryableLoad.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  144118,
+                               "SHA256":  "D905331C2C498E41EF59184813AD9A7E129301EB4951A8BBA4050DCE00FF051C",
+                               "RelativePath":  "src\\data\\rocketLaunches.js"
+                           },
+                           {
+                               "SizeBytes":  49478,
+                               "SHA256":  "CA6A3E7EBA7B327718178EDC6EDEF7E6168F492EBE8B30A145F7861AAED082CE",
+                               "RelativePath":  "src\\data\\rocketLaunches.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3834,
+                               "SHA256":  "F86769D0D695F7C094428FB3CD9320F131081A8206343B4F3AB4AF088AC4B0C0",
+                               "RelativePath":  "src\\data\\routePlausible.js"
+                           },
+                           {
+                               "SizeBytes":  1818,
+                               "SHA256":  "00545C711C97ECA945274A19E63FF3FFEFCBC267BC30B489302E6FFAF7C7EA86",
+                               "RelativePath":  "src\\data\\routePlausible.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  8116,
+                               "SHA256":  "ED4AC9D893764814D60A73B3DE40DB2608D35D467089B57DF7B02290AE2C7721",
+                               "RelativePath":  "src\\data\\satelliteClass.js"
+                           },
+                           {
+                               "SizeBytes":  20512,
+                               "SHA256":  "62A717891DBF2E8D8F0DCE66498E898CE25472494CD494EAC661FF918E00EDB4",
+                               "RelativePath":  "src\\data\\satelliteClass.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  93786,
+                               "SHA256":  "A9E8DA7855D4E8B5939D16C9FAB90A1FCB85473BD2596E3E80A03D4A3F5C40DD",
+                               "RelativePath":  "src\\data\\satellites.js"
+                           },
+                           {
+                               "SizeBytes":  13208,
+                               "SHA256":  "16F5C9D3D8F84E27C99334CF3F8968EEDA7A6E8A94A46D4C121052159C51A8A9",
+                               "RelativePath":  "src\\data\\satellitesTrackedRefresh.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  567,
+                               "SHA256":  "78C9086462FA13E575A48CD1AF06422510E40357814958DE586A81CBBE8960B4",
+                               "RelativePath":  "src\\data\\satellitesVisibility.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  2199,
+                               "SHA256":  "48338C0230C043454D0009E1A6CFD3D4797E9A6807E11BB33606E1FB69F399D5",
+                               "RelativePath":  "src\\data\\scenePick.js"
+                           },
+                           {
+                               "SizeBytes":  6231,
+                               "SHA256":  "BABD85D1BF8541EFEF52B5BC815DBF7D2003C766EBEEFDF6CB4DE188CFC622C1",
+                               "RelativePath":  "src\\data\\scenePick.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  2511,
+                               "SHA256":  "30F65FEF022D6F6433E93B38BAFB6F42D83FD088A39F88534BA190AF5EACFD9B",
+                               "RelativePath":  "src\\data\\spriteOrder.js"
+                           },
+                           {
+                               "SizeBytes":  4458,
+                               "SHA256":  "4BE1208FD4E75CE6603590465B85CF7E2B95025634CD84A2FA9948ED615B88FA",
+                               "RelativePath":  "src\\data\\spriteOrder.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  45712,
+                               "SHA256":  "17F922050493FE447407866D78E8AA16119DF1DD7699C8622A93F7CE2D97792A",
+                               "RelativePath":  "src\\data\\telegeographySubmarineCables.js"
+                           },
+                           {
+                               "SizeBytes":  51010,
+                               "SHA256":  "37E9A94D363F83E48AD550A3BB4E819EE5291A88BCE4F90EF750B7EB040094A6",
+                               "RelativePath":  "src\\data\\telegeographySubmarineCables.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  11423,
+                               "SHA256":  "476C2036E8517A41B0C58DD71DF0D5AC7F1B3245ACB3CA4D27252A24A5FCB4A9",
+                               "RelativePath":  "src\\data\\terrainHeights.js"
+                           },
+                           {
+                               "SizeBytes":  13756,
+                               "SHA256":  "5E9CE3EFBF866F8902E2E4E010239C27FCB1A5FE36AB35214B05A1141350F0FC",
+                               "RelativePath":  "src\\data\\terrainHeights.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  7611,
+                               "SHA256":  "E066FD6CC98512ADCA810277ADE39C6BD865FE87E301C838012CFFBF09EF4DB0",
+                               "RelativePath":  "src\\data\\terrainHeightsProxy.js"
+                           },
+                           {
+                               "SizeBytes":  3825,
+                               "SHA256":  "334E0FD77AC5858CFC32B396DF468A042486D1D59A2F963F51D330825AE42606",
+                               "RelativePath":  "src\\data\\terrainHeightsProxy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5711,
+                               "SHA256":  "1F442EC9CAC5C4D3542E2EA3B7CD54DEACB82DCBB3801AC31BB52B02BE0BEC3A",
+                               "RelativePath":  "src\\data\\tomtomTiles.js"
+                           },
+                           {
+                               "SizeBytes":  6525,
+                               "SHA256":  "6E2567040BF9EEA3E32F1631EDB52B77A3DE72D456B05A7A1AAE078DC05A8949",
+                               "RelativePath":  "src\\data\\tomtomTiles.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  4803,
+                               "SHA256":  "E4233D0B325262DF201AEFE027434910977B969A0E7FF983063836144D40F90E",
+                               "RelativePath":  "src\\data\\tr3bRegistry.js"
+                           },
+                           {
+                               "SizeBytes":  23920,
+                               "SHA256":  "DF80F49AF51AE180676E63C92200B0FB80D4579BC53341F5BD43849BE35223A2",
+                               "RelativePath":  "src\\data\\tr3bRegistry.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  8412,
+                               "SHA256":  "9CD8F5426AEDF23A511E04C89EF2F6E27D6EBF776AD6A92D25BFE607E0E84B9C",
+                               "RelativePath":  "src\\data\\trackedCamera.js"
+                           },
+                           {
+                               "SizeBytes":  3119,
+                               "SHA256":  "5C6C68DC0D5F2CB7A5770FF1B9634EB19426555FA76E907B6A51318013D5D891",
+                               "RelativePath":  "src\\data\\trackedCamera.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  4666,
+                               "SHA256":  "914487F6A4371C310B36F629FE9AA99BE2139C86877A839CA616DE2A4B5EE54C",
+                               "RelativePath":  "src\\data\\trackedModelRegime.js"
+                           },
+                           {
+                               "SizeBytes":  46179,
+                               "SHA256":  "BA96B06353C80F2372D8928BE5F176303BC4F456E1216EDD78083D6DCD8EC975",
+                               "RelativePath":  "src\\data\\trackedModelRegime.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  9053,
+                               "SHA256":  "D216CBA8E231818FC2A09716384D3555FBDA4B7C33FC0D8E9DFF1B06163D489C",
+                               "RelativePath":  "src\\data\\trackedReadout.js"
+                           },
+                           {
+                               "SizeBytes":  11583,
+                               "SHA256":  "A0819B2ABD2CE060187A094E993EF772C9852FDA77281DDB6834C025FBBDC243",
+                               "RelativePath":  "src\\data\\trackedReadout.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3773,
+                               "SHA256":  "BF4EFB9C03A76F7D3CD508BB98C04BF09BFD095BC42C327CC374CFDD4098304D",
+                               "RelativePath":  "src\\data\\trackingClickGesture.js"
+                           },
+                           {
+                               "SizeBytes":  4907,
+                               "SHA256":  "E64F29EAEDD6FF7BF9938317E92D8CC03C5549570D0E8EB134BC743FB31AF979",
+                               "RelativePath":  "src\\data\\trackingClickGesture.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  103193,
+                               "SHA256":  "C5FD5537F498C02CDA1A196C2804AFBA2B1889A49883AC58F5F137A696833342",
+                               "RelativePath":  "src\\data\\traffic.js"
+                           },
+                           {
+                               "SizeBytes":  6479,
+                               "SHA256":  "9C38860B57D4B7D73B48690E0DB8C711C7263A2314016B89AE17E3F8EA0955F8",
+                               "RelativePath":  "src\\data\\traffic.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5892,
+                               "SHA256":  "A6F0847BBBD6BA06D7DE1CC4E4F320321F4E9B34E23576D4E0922BC7B3B1811C",
+                               "RelativePath":  "src\\data\\trafficBounds.js"
+                           },
+                           {
+                               "SizeBytes":  4684,
+                               "SHA256":  "6B58EE57420356156C17A2AFC951B1CCDD1E0B86213B962EEB350560199671D7",
+                               "RelativePath":  "src\\data\\trafficBounds.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3071,
+                               "SHA256":  "3C696483337DBAD5525D090AF4449DEEA445F9A34C9B323313187326707D0C9B",
+                               "RelativePath":  "src\\data\\trafficFlowStyle.js"
+                           },
+                           {
+                               "SizeBytes":  4317,
+                               "SHA256":  "BF7642CF3F75F3304BE0B3DBD98FDC2D69021A7BDA39EFDD788F981D6ED45244",
+                               "RelativePath":  "src\\data\\trafficFlowStyle.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  6187,
+                               "SHA256":  "21128AB6AA611AE1E016D7B19D905B02974048D678700E6F5434AE03B2E85A23",
+                               "RelativePath":  "src\\data\\trafficPresetStyle.js"
+                           },
+                           {
+                               "SizeBytes":  4965,
+                               "SHA256":  "FFA3DF29055D5BD87E59E648D124A186699612E530DA80555CB1F22F418B93B6",
+                               "RelativePath":  "src\\data\\trafficPresetStyle.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3581,
+                               "SHA256":  "D1B326138BD98F40574065F63574411E071F4663A0AD7D22BC65D76E94F95654",
+                               "RelativePath":  "src\\data\\trafficQueue.js"
+                           },
+                           {
+                               "SizeBytes":  3155,
+                               "SHA256":  "1FC5CEC8B98949918FD99E79DA074AE65DFB152C6D96628BB40046E1A17CBCD4",
+                               "RelativePath":  "src\\data\\trafficQueue.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  13723,
+                               "SHA256":  "3C12AD386C38D30CEAF68EE411B2D00579361BF8278CCCF85AE1AED291671B7D",
+                               "RelativePath":  "src\\data\\trafficTiming.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5894,
+                               "SHA256":  "8549CA559605681AC9C1288A3B752278D4B9F3CE79076C629E1ABEF849BAFBB2",
+                               "RelativePath":  "src\\data\\trailRenderer.js"
+                           },
+                           {
+                               "SizeBytes":  1078,
+                               "SHA256":  "3C53DD58D48DEE488DF99305B1D6648C88A6B9EAE54DBDF312186CE694BFB108",
+                               "RelativePath":  "src\\data\\trailRenderer.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  4805,
+                               "SHA256":  "9CA1300CCC839129002D29ACA26145CD49C217F12F6FE8161FE1548DCD951C31",
+                               "RelativePath":  "src\\data\\vesselLabels.js"
+                           },
+                           {
+                               "SizeBytes":  4163,
+                               "SHA256":  "29C721B0DFE241C3510DC5B7EBCB48196204E4162D3A6904AE9A5AFDF7B27885",
+                               "RelativePath":  "src\\data\\vesselLabels.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  6642,
+                               "SHA256":  "38E72EFE02DB9AFA297919339A58316589F0A574CFFE0BA0373D6BDEC8264624",
+                               "RelativePath":  "src\\devFreshDotenv.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  29256,
+                               "SHA256":  "8907199BF46B7EBA8EE457C05C05B30E7C88ED81B5F90260A71ED00375E381BC",
+                               "RelativePath":  "src\\firstRunExperience.js"
+                           },
+                           {
+                               "SizeBytes":  36527,
+                               "SHA256":  "7E22463117A0E7D1EF577A4631BA57C03C2936096F2F5851A8916368B7B1558C",
+                               "RelativePath":  "src\\firstRunExperience.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3274,
+                               "SHA256":  "BCD6310D6EA29389DC052DAD77777C54B19357858754FF72996B518E7D88A13A",
+                               "RelativePath":  "src\\googlePlacesKeyless.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  34300,
+                               "SHA256":  "B678C5A4BF9D2D2A61881D28409F8D5673D366533E5558D36D67BBA45CF2AD16",
+                               "RelativePath":  "src\\hud.js"
+                           },
+                           {
+                               "SizeBytes":  9698,
+                               "SHA256":  "E3A035FA3DFD2FBAF59F411C6B2E277B71E4104FF037CE46CE4BA3EA28D16F23",
+                               "RelativePath":  "src\\hudAltitudeDatum.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  2404,
+                               "SHA256":  "4EF13B2A3CC5C431F6F12D6B00F8ACE3B00EF7860284B69DF089421CFC843E26",
+                               "RelativePath":  "src\\hudLocality.js"
+                           },
+                           {
+                               "SizeBytes":  4237,
+                               "SHA256":  "EDB73C5ED846AD82EB220DE285AC8F05C275239F4F880AE4DBF4E0DBB223BC63",
+                               "RelativePath":  "src\\hudLocality.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1183,
+                               "SHA256":  "98E1A151D21DFD5C6DDA6C4B1C8385C3A40CA365CBFB157407A67892FAEF3EA9",
+                               "RelativePath":  "src\\hudSummaryResponse.js"
+                           },
+                           {
+                               "SizeBytes":  4351,
+                               "SHA256":  "E878D4175894DD0171A98B337BB6BBA153B40D5A83B8EA41A7CA030D4F5594E5",
+                               "RelativePath":  "src\\hudSummaryResponse.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  13622,
+                               "SHA256":  "915606C69DE2E1D02170B11D9EF4FF9BFADB72AFE3711F8AC0467323013CA8E2",
+                               "RelativePath":  "src\\keySetup.js"
+                           },
+                           {
+                               "SizeBytes":  1891,
+                               "SHA256":  "BEB0065F698CAD4008070E1E66C9C9698DDA43525E8C81E0021DC75048B33E02",
+                               "RelativePath":  "src\\keySetup.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  16985,
+                               "SHA256":  "BB84651418D8851434A21DB2C7A7D96E6829FFC88A6AA345A524D30EC33C11C9",
+                               "RelativePath":  "src\\keySetupCore.mjs"
+                           },
+                           {
+                               "SizeBytes":  16922,
+                               "SHA256":  "23708B2F327E947636F97D46F3B0EEC2074DD14D0123F685730B1BA5685477D4",
+                               "RelativePath":  "src\\keySetupCore.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  6123,
+                               "SHA256":  "E277A42EBA89C292243E8B06AC84E56A15CBE19E3A0E23B28D3AD1E568D113C4",
+                               "RelativePath":  "src\\keySetupHardening.mjs"
+                           },
+                           {
+                               "SizeBytes":  9936,
+                               "SHA256":  "DE510D3C477690FB19D8FF0F97256DC47528DAEE948CB474FB9278A9FF1A75FE",
+                               "RelativePath":  "src\\keySetupHardening.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  898,
+                               "SHA256":  "FAEEBC8759855613F4BA77C6776756363E68EDB958FA01824A66F17DCCABD2A3",
+                               "RelativePath":  "src\\kuramoto_thermal_core.ps1"
+                           },
+                           {
+                               "SizeBytes":  13265,
+                               "SHA256":  "2818B7DB4BFDC20DE548D46814B374EA2D85A7AA1A464023BEDFCBF083109D05",
+                               "RelativePath":  "src\\loadingFeedback.js"
+                           },
+                           {
+                               "SizeBytes":  33535,
+                               "SHA256":  "0B45457D159E34AA98E9111ED21B4F9F79DDC162923BF816C3133B2F3FCE9858",
+                               "RelativePath":  "src\\loadingFeedback.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  6049,
+                               "SHA256":  "EEF186F6DFF8BEEE4DF569EC07983ADFC8AF63E61A11BBD96FC37BAB0BC8F48E",
+                               "RelativePath":  "src\\locationReadouts.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  42194,
+                               "SHA256":  "46CF40F79D9D48BCAE40F1E7460F2255A26780D2589285D8A9751514890443EA",
+                               "RelativePath":  "src\\locations.js"
+                           },
+                           {
+                               "SizeBytes":  27851,
+                               "SHA256":  "F736E932565B25E658906018029E2291506F9CBD925F16FC00519C1EFE012E9B",
+                               "RelativePath":  "src\\locations.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  2346,
+                               "SHA256":  "11B2A1E534443207B16A123CB012D7F32114ACCF6787CA144F075829063721A7",
+                               "RelativePath":  "src\\locationStatus.js"
+                           },
+                           {
+                               "SizeBytes":  2634,
+                               "SHA256":  "97CC673B328A77B3E71D444E5192406C36A6C6A4C7777DD2E3EA489EC7ECF071",
+                               "RelativePath":  "src\\locationStatus.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5243,
+                               "SHA256":  "6F2B9A750C3305EDAC7C37B1342CA62119A6A6936CAB5C4CFFE70EAA2EA40FD6",
+                               "RelativePath":  "src\\logoGaze.js"
+                           },
+                           {
+                               "SizeBytes":  1400,
+                               "SHA256":  "2B221159932A321C04BBD41A83D26C305F6B1F1F7A537F68CFA335059C87E4F4",
+                               "RelativePath":  "src\\logoGaze.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  15001,
+                               "SHA256":  "AA186E1D506BB3A9E51BA42346D5B1667025C7052FE1AD8F9C30C06F260F9CED",
+                               "RelativePath":  "src\\main.js"
+                           },
+                           {
+                               "SizeBytes":  6006,
+                               "SHA256":  "47A47CA470FD523BA994B412F1774206C5F9ADFEC5BB551C875606C037E3276C",
+                               "RelativePath":  "src\\mapStackChips.js"
+                           },
+                           {
+                               "SizeBytes":  17803,
+                               "SHA256":  "5409046CEBDB35498AF38BEECD740EDD4141806FE9C6D979DF616361B0CA8BE1",
+                               "RelativePath":  "src\\mapStackChips.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  19795,
+                               "SHA256":  "412E5C6968D8E00272B10C8D6534C40C98F785AF192424F8E96EE3F1704078EE",
+                               "RelativePath":  "src\\mapStackController.js"
+                           },
+                           {
+                               "SizeBytes":  990,
+                               "SHA256":  "482D5FD07284B8F48A5FE4B9E3EF6816C0744078DCD606D5C31BB23D8BDDFA55",
+                               "RelativePath":  "src\\mapStackUnavailableReason.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1835,
+                               "SHA256":  "F26DD9DD5E51B472AFA36AF5F3C917111832A12D3C468805D3A537AA2F459B3F",
+                               "RelativePath":  "src\\mapStartup.js"
+                           },
+                           {
+                               "SizeBytes":  3880,
+                               "SHA256":  "B60ED520E216F0AB2AB4DDDAC242BBAD6FF142E6783EBF8F9A9A86402306771F",
+                               "RelativePath":  "src\\mapStartup.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  4460,
+                               "SHA256":  "E9C472CE8F26922500DDB21504689968440AA9088C18CCD20A7A3DE7F95EE099",
+                               "RelativePath":  "src\\navigationPolicy.js"
+                           },
+                           {
+                               "SizeBytes":  9880,
+                               "SHA256":  "CC37E080823D334106D84E531E4820DF22B8A2FC78DC5F07B8BED8831F6A1E25",
+                               "RelativePath":  "src\\navigationPolicy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  2841,
+                               "SHA256":  "CA591AAD17F5421397B97E178D536CB1984E4E34D96504C30B9896AAB366E51A",
+                               "RelativePath":  "src\\orbit.js"
+                           },
+                           {
+                               "SizeBytes":  92893,
+                               "SHA256":  "3D0AC8E95D670D8666BB24550358391BCD72A4A18464881F8625917AE90600DF",
+                               "RelativePath":  "src\\overlays\\worldOverlay.js"
+                           },
+                           {
+                               "SizeBytes":  85828,
+                               "SHA256":  "71377890D131216823D57D59701EA8C4D12D18B728E096E8DC0680BC73AD9478",
+                               "RelativePath":  "src\\overlays\\worldOverlay.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  18915,
+                               "SHA256":  "BDC3B74A8901A21520923F02CBFD88665120C39BD0DE92EDA69543E5AB17EFD7",
+                               "RelativePath":  "src\\overlays\\worldOverlayAllocation.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  40821,
+                               "SHA256":  "1F860543F25C49B23A5F0C364183D335AEADD0C2D582347A27D50E6B32F0E032",
+                               "RelativePath":  "src\\overlays\\worldOverlayAllocation.worker.mjs"
+                           },
+                           {
+                               "SizeBytes":  31027,
+                               "SHA256":  "4BC4025B371B134E0AECE231BDBD60F234740425C248D9EE1F9BAFB698F2DEAC",
+                               "RelativePath":  "src\\overlays\\worldOverlayDraw.js"
+                           },
+                           {
+                               "SizeBytes":  22565,
+                               "SHA256":  "0FECFF9355613BB3CDF3B5130BE12566CF1AF8C1ABE077763C5FACE80758749B",
+                               "RelativePath":  "src\\overlays\\worldOverlayDraw.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  7136,
+                               "SHA256":  "F2999594D347033FA8EBCE14C4F636511F613F13C7B815DF328F8C4F78F133F1",
+                               "RelativePath":  "src\\overlays\\worldOverlayTokens.js"
+                           },
+                           {
+                               "SizeBytes":  9927,
+                               "SHA256":  "4CA6C4F585B58E2550C1DA178A93C54FD56D7CB1D8402A9A3EABF49983F75008",
+                               "RelativePath":  "src\\overpassProxy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5930,
+                               "SHA256":  "D9A0483516DD8C1F55FCEB97CF4E9E802DC757A1F2F73369BCFF3155336F5ACC",
+                               "RelativePath":  "src\\panelStackLayout.js"
+                           },
+                           {
+                               "SizeBytes":  11911,
+                               "SHA256":  "CE68004FF0D39111529987E25BCE551779B9A2FCAB3AED3CEF578201A6738E12",
+                               "RelativePath":  "src\\panelStackLayout.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  8335,
+                               "SHA256":  "F6778899F5FC26A439C115060E1417C2F88A93D46BB3EA1D888FD96C515DF88E",
+                               "RelativePath":  "src\\pinokioEnvironment.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  9677,
+                               "SHA256":  "7020997350159EFA6D8B06F6CB5A86A466149F2F128FEEEA7B85493E61CB161A",
+                               "RelativePath":  "src\\pinokioLauncherContract.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1814,
+                               "SHA256":  "CE9781AF742A177DB1B3EDBAF71EBC336615EB9E281EE0BDAF3A5AA99A911217",
+                               "RelativePath":  "src\\pinokioPreflight.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  12771,
+                               "SHA256":  "D220C46CFF9FCCDD809D83B499ACDB45608C41FFBCA5E78B49B37BFDAEC86A45",
+                               "RelativePath":  "src\\qaL9MatrixVerdicts.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3716,
+                               "SHA256":  "83CF16FBAE5F821FF297E1FF12039E3C787C00F16A11D7224E6C42D7F99DE773",
+                               "RelativePath":  "src\\qaVesselCardsHarness.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  22252,
+                               "SHA256":  "3764CB29214579F25010459C60B4453DE0068BED3EFE72643DE47B1E07896065",
+                               "RelativePath":  "src\\radioMarkup.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  15321,
+                               "SHA256":  "7B325C89BF6E9CBAC617B8CF4C747ADD75C16926D5CBF7E7F3A4C10494BD7CB0",
+                               "RelativePath":  "src\\reasonableDefaults.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5077,
+                               "SHA256":  "E7F510092F543159BB7DEF1D73A31CC5B54B3458ED791758C27A108990AAF371",
+                               "RelativePath":  "src\\renderGovernor.js"
+                           },
+                           {
+                               "SizeBytes":  3856,
+                               "SHA256":  "7321F59CFBC7A12097C83FB0BD17D478E4C92367FEACB1E01702DA7272038833",
+                               "RelativePath":  "src\\renderGovernor.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1875,
+                               "SHA256":  "4988E86BFBAC28BC9BDF615D6F49B4037A519B6D70C6DC75119D835FBDC67D47",
+                               "RelativePath":  "src\\rightRailPolicy.js"
+                           },
+                           {
+                               "SizeBytes":  3299,
+                               "SHA256":  "58C5A5095F3678457324D29160B8D4C64C2413092C378864F5D319B11289C286",
+                               "RelativePath":  "src\\rightRailPolicy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  1824,
+                               "SHA256":  "F8272105BE7C67F3DFEBACB9B2E6EA75F0054A44548A8D286AE28C66D577E048",
+                               "RelativePath":  "src\\robdoe_deepseek_n.ps1"
+                           },
+                           {
+                               "SizeBytes":  1242,
+                               "SHA256":  "B719B842B16368C16C32B5D9DD7E191235A89EFC0D12E743995B139911BFB736",
+                               "RelativePath":  "src\\robdoe_oracle.ps1"
+                           },
+                           {
+                               "SizeBytes":  46774,
+                               "SHA256":  "2E629458DB46A1BFF37330BC67EF458288F1A75B5A5E3CE81618273232606C52",
+                               "RelativePath":  "src\\routeCinematics.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  52474,
+                               "SHA256":  "2C608CC34AFC4FDAF02BB3E09F3C2A3AC6733317DC59A66F92C83DE162A82304",
+                               "RelativePath":  "src\\scenes\\director.js"
+                           },
+                           {
+                               "SizeBytes":  24466,
+                               "SHA256":  "016E2C32D2AC39211984E529FFA7D1E44270B7E5064FC7CAAF9799E2D9EE450C",
+                               "RelativePath":  "src\\scenes\\director.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  5421,
+                               "SHA256":  "8FD2BFFB3460131C0459E79802D00D420448EFA6D41480E553B8BE3866BC7273",
+                               "RelativePath":  "src\\scenes\\recipes.js"
+                           },
+                           {
+                               "SizeBytes":  7277,
+                               "SHA256":  "E2C177811E38FFD9B49BEDC5B887BF71C18B8247EFEF0F35ECFDE524F8A6EB7F",
+                               "RelativePath":  "src\\scenes\\scenePolicy.js"
+                           },
+                           {
+                               "SizeBytes":  9498,
+                               "SHA256":  "B469E41F610E5E663020BF760DB4F45880174C2296CEFB99CA9DA187AEC0C41B",
+                               "RelativePath":  "src\\scenes\\scenePolicy.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  21517,
+                               "SHA256":  "002E12E670C6157F76FD152B2CFD025385F3C5225A9038910F8CC305B9433123",
+                               "RelativePath":  "src\\scopeMask.js"
+                           },
+                           {
+                               "SizeBytes":  22197,
+                               "SHA256":  "31A3A54BA5E86B2AD1DF48AF522BE66D30AB7BDF762961ED407D3AEF4D56EAE7",
+                               "RelativePath":  "src\\scopeMask.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  9579,
+                               "SHA256":  "A1A1B73455110AC663A561F83C75AC1C818958626093387B3E83633A6107F5EC",
+                               "RelativePath":  "src\\setupDoctor.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  31006,
+                               "SHA256":  "53D7B327A401AF75669CAA089D00ED35DBFAD88EEE0E2ABC74CBEB3F8147BBD5",
+                               "RelativePath":  "src\\sharelink.celestial.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  26834,
+                               "SHA256":  "2D2C7A646DAAD263B5C70603F9BB98859399BB4FFC7C955B1FD8135D599FB514",
+                               "RelativePath":  "src\\sharelink.js"
+                           },
+                           {
+                               "SizeBytes":  20961,
+                               "SHA256":  "376EE0DFBDE2121834666BA8078A8F5DC67B4FD3C0694BDA42991974087DCA84",
+                               "RelativePath":  "src\\splitFlap.js"
+                           },
+                           {
+                               "SizeBytes":  14280,
+                               "SHA256":  "1D080B3B5D28B6F155BA6BE5A0F10FF0C2F28C3302E77E990D093EBA77C2A434",
+                               "RelativePath":  "src\\splitFlap.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  2704,
+                               "SHA256":  "F7EDC2BDE2AEB4AA83AC2E25CD93268E4CFD7C1E966FA232D4ED74E15DDE708C",
+                               "RelativePath":  "src\\styles\\anime.js"
+                           },
+                           {
+                               "SizeBytes":  1984,
+                               "SHA256":  "9C75EA2D213A7AD6534CE897BCF0D043F727726DA189CEA1249C2F8C89B88A8D",
+                               "RelativePath":  "src\\styles\\noir.js"
+                           },
+                           {
+                               "SizeBytes":  8092,
+                               "SHA256":  "AC74550B9C60BB9D03B0C2732F450AA96F28E5FA38426301B74AFB3A3E406F80",
+                               "RelativePath":  "src\\styles\\retro.js"
+                           },
+                           {
+                               "SizeBytes":  3111,
+                               "SHA256":  "C2A504C7D993A3DBD6462AAEB7D9598CE38C9BC205A70B34B0ED057CEC3CFE6F",
+                               "RelativePath":  "src\\styles\\snow.js"
+                           },
+                           {
+                               "SizeBytes":  11794,
+                               "SHA256":  "8C33819A7E5821A6B629D5B79217D2F0BEF71A7B3F2DA3B6742EF06F41A25453",
+                               "RelativePath":  "src\\styles\\surveillance.js"
+                           },
+                           {
+                               "SizeBytes":  14317,
+                               "SHA256":  "3D70FC4F9AF7976923D33339AF4D3B38A7CA86CC0F7F496A86B3E0B9A0264940",
+                               "RelativePath":  "src\\styles\\thermal.js"
+                           },
+                           {
+                               "SizeBytes":  456037,
+                               "SHA256":  "3A6D2EF11CBE8F3DE54971F68FA361EA2F017E5103F9124BBC9E0C86D1262066",
+                               "RelativePath":  "src\\ui.js"
+                           },
+                           {
+                               "SizeBytes":  2618,
+                               "SHA256":  "7E662D0812EE9F58C4FAB40A57420726750A9261A9D15A0B18004526623F219A",
+                               "RelativePath":  "src\\unitTestRunner.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  2488,
+                               "SHA256":  "891EB13DBB21E2D1F74C69B1F37C455190BA615CDF47DEF2BE96F4CD3BDE8359",
+                               "RelativePath":  "src\\voice\\aircraftIdentityNarration.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  135870,
+                               "SHA256":  "230820D200FCD0BDBF0E1C659B3F778326BB8CDF9D0ABF6E93FB38BF34A70AC0",
+                               "RelativePath":  "src\\voice\\gevActions.js"
+                           },
+                           {
+                               "SizeBytes":  116764,
+                               "SHA256":  "0923EC912C15E8C0DD2BB0C0CEAB535FE1BE40F4B5D8A8FF4B43103FFE3E5574",
+                               "RelativePath":  "src\\voice\\gevActions.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  108496,
+                               "SHA256":  "C996DEB27028D28C94A152DC780348E4EA337A67012F3B0E4EE91927F8F502B6",
+                               "RelativePath":  "src\\voice\\gevRealtime.js"
+                           },
+                           {
+                               "SizeBytes":  123863,
+                               "SHA256":  "F4E84D137BA0D3A71FD6ECD05FE863D337804C628576BA995BB53AE32A7F409A",
+                               "RelativePath":  "src\\voice\\gevRealtime.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  17421,
+                               "SHA256":  "8890E65FFE58AD0BAD8EE433E3205C473EA2183F013C0CED037DDC3F6B0E9BBF",
+                               "RelativePath":  "src\\voice\\voiceCost.js"
+                           },
+                           {
+                               "SizeBytes":  24862,
+                               "SHA256":  "4B8E96BFA185725DBA57D55C03F7DD764D87347A15791CDB3135C9D7DCD36D0A",
+                               "RelativePath":  "src\\voice\\voiceCost.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  2847,
+                               "SHA256":  "1E90176382679B218BCB9FB533C81FA8A21C2E38D6A5BC8409175A4B01C513D1",
+                               "RelativePath":  "src\\weatherEffectsMath.js"
+                           },
+                           {
+                               "SizeBytes":  2106,
+                               "SHA256":  "F7E7B6A8F8DCE43BAF3E6F30A7F7E5EB9FCCD5AB510701EB7D7884F2CE594DC9",
+                               "RelativePath":  "src\\weatherEffectsMath.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  3295,
+                               "SHA256":  "E446BF3F336E7D3F14C36B5E26572E5D7F905EFBD346CDF9BC380247B4596F18",
+                               "RelativePath":  "src\\worldFocus.js"
+                           },
+                           {
+                               "SizeBytes":  7751,
+                               "SHA256":  "91F10B05C4C47ADB99C651D9FCE3F0C83453448E9D14B9484758EAB8A95EB50D",
+                               "RelativePath":  "src\\worldFocus.test.mjs"
+                           },
+                           {
+                               "SizeBytes":  256472,
+                               "SHA256":  "031128D66CB7C0A966B20D6D165D5A0589F75CE8A95B87E57842F531E8A01D18",
+                               "RelativePath":  "style.css"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "1C8C3FF4F42681079C0134C94CE955D23A96333AD0B21FC71882C751A083BF37",
+                               "RelativePath":  "telemetry_buffer\\frame_1.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "28FBE861EC102984B372547E94B15BC9B8A1D85AE1DAEA76029C14FA4A94E0F1",
+                               "RelativePath":  "telemetry_buffer\\frame_10.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "85A38594AE4AC4E39F5A2DA59F6833B3FAB25F9291B53059DAEE638163F3A769",
+                               "RelativePath":  "telemetry_buffer\\frame_11.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "B6A7CC79685DB26361E5BD9B3BE8A31274EF47F0506F775CE15275A5A076B69B",
+                               "RelativePath":  "telemetry_buffer\\frame_12.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "D24EA34CA28244443253BE0605187D91860A6F89F2FDF51C610B38F1898958F2",
+                               "RelativePath":  "telemetry_buffer\\frame_13.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "9B39314E385BA231F6158CF4C7B1F0F41F24A5D1FE044FAAF37A5560DF7BA89C",
+                               "RelativePath":  "telemetry_buffer\\frame_14.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "347369661400C5B8A63B88B67BC84CC8F4A381BE952CA66BE478C3E21ADEAE9F",
+                               "RelativePath":  "telemetry_buffer\\frame_15.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "C5B2D5F4980B3A298DE688791CB4ACB4337E41E86F6EDDCF1177C60DF1C6E9D1",
+                               "RelativePath":  "telemetry_buffer\\frame_16.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "71D81160F72479BADA632B008CB5B9817C735C3C3FFDE1D4175DDDAC75ED1ED4",
+                               "RelativePath":  "telemetry_buffer\\frame_17.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "83602789E52F7E7A180B1209898DEBF84CEE79BD538B0E956D6EDC0D88714FDE",
+                               "RelativePath":  "telemetry_buffer\\frame_18.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "A1F843BE1E4C2CE89DC7EB99BAA06DF1BF6F022A17EE2CD2119EFFA9174DFB1C",
+                               "RelativePath":  "telemetry_buffer\\frame_19.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "3A2EFA0A16DA3782BA2F7102E15CB91AA9EE231774877D69D7381D2648D2CCAF",
+                               "RelativePath":  "telemetry_buffer\\frame_2.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "65E4E5BB6304CAC80EEBF74C695D35DEC0F4DB0F16FF9FA08F1DA83BC1C7E876",
+                               "RelativePath":  "telemetry_buffer\\frame_20.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "38DDFE9E2D86E1240B7A8493BD0359ADBD526893B6AE05DAD2E8737E66FE4FCB",
+                               "RelativePath":  "telemetry_buffer\\frame_21.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "11D2EED3C948D7F4AF3388C5E4D4E7D413EE938308F2CC95D44CCFE520B01426",
+                               "RelativePath":  "telemetry_buffer\\frame_22.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "D9DEF1DD4317024CB7B19B75C3577411F74BCA5C656EF0ECECCA00663E1FAF6D",
+                               "RelativePath":  "telemetry_buffer\\frame_23.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "E16DB7CD839BE498AFDE6C981D937CB2C7F314D2BFF1BE94CCA7970DFFAE2BA7",
+                               "RelativePath":  "telemetry_buffer\\frame_24.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "6F791DC6919963AB95F2244B2365CA7B27E30A7DE621AB50604123F58A028948",
+                               "RelativePath":  "telemetry_buffer\\frame_25.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "829D7B08733FA0C2758F29658FECE261018C326C3F6896350D188E9F09619047",
+                               "RelativePath":  "telemetry_buffer\\frame_26.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "D9206AC5135E8F33115B0E2AB284E02AB3945FE21B957C2A7D03AFACD65BC45B",
+                               "RelativePath":  "telemetry_buffer\\frame_27.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "CE4C22C3DADA57A4F587BE6C6A92AE7F244CF73493C01C68379CD1F7D8CB6701",
+                               "RelativePath":  "telemetry_buffer\\frame_28.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "9BE38265E2CCCA9DE62AD1501EC364D843C0A36FC2BD29D4870BA8DF4FF51F90",
+                               "RelativePath":  "telemetry_buffer\\frame_29.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "B8C85134E027DDE0DE950E31C8A486ED398A57AFF6189632ED606DB9F2F2B86F",
+                               "RelativePath":  "telemetry_buffer\\frame_3.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "B6CFA57C7B05DFA20AE5C693373E62C0DF6C6BCE04004CCA6B860D50BF30F971",
+                               "RelativePath":  "telemetry_buffer\\frame_30.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "CA372F8B8C69D17949E778127779A99B1900DF4709E30CB46680DCDD9EC530F2",
+                               "RelativePath":  "telemetry_buffer\\frame_31.json"
+                           },
+                           {
+                               "SizeBytes":  534,
+                               "SHA256":  "4715D7A441434816AB0AA7B390C112CFFAE55BB79E6E38FD8AC81D44F6746282",
+                               "RelativePath":  "telemetry_buffer\\frame_32.json"
+                           },
+                           {
+                               "SizeBytes":  533,
+                               "SHA256":  "764B25F07AC38880A9363F0B7D9E66FC5E45A0E88223F4DA21F6C140AD95D0F8",
+                               "RelativePath":  "telemetry_buffer\\frame_33.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "AD229ABC8E7C99EE7F6333726C51603D57676CE239940B290BBAD5429D987322",
+                               "RelativePath":  "telemetry_buffer\\frame_34.json"
+                           },
+                           {
+                               "SizeBytes":  533,
+                               "SHA256":  "CDA66AECE89C12F17E859A6D3000AB9FCCF6B6DCD531689D0ABE521C5B23414D",
+                               "RelativePath":  "telemetry_buffer\\frame_35.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "68F79A7874B7F7FADD9F46A4512BEFFFBB61A80AC7370DEE3812AA9EEDBFDC10",
+                               "RelativePath":  "telemetry_buffer\\frame_36.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "D99BAC2BF9E743DBA1CA6837B76AC3C8E5DF5FB3FBD5E4BA4ED353DDA4C5B93B",
+                               "RelativePath":  "telemetry_buffer\\frame_37.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "328AD5DE492A4A114ACB7A86B5596D3EBC411C9B452FCD2AF533E65E791174AA",
+                               "RelativePath":  "telemetry_buffer\\frame_38.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "B5CF047393AE1481A0D4544DACBBD00D7A294E7DAD431B9420E861DE33F618EA",
+                               "RelativePath":  "telemetry_buffer\\frame_39.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "1C725390E94451338C837DFDDE04C435A36FBB24F05D69D3CD7AFA5FF2C42FEE",
+                               "RelativePath":  "telemetry_buffer\\frame_4.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "77344AEF3E805AB5B44367C27893FDBA8EB79559195C11C01B8BB8A498590BF2",
+                               "RelativePath":  "telemetry_buffer\\frame_40.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "77C86EB11DA6FA4D47BD0424F578D794C28EC61E87B9AEAE4C694421C00157EC",
+                               "RelativePath":  "telemetry_buffer\\frame_41.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "80815387D7704B5790E33E6FC49A81A7B4923049FF5DD3A57FBFB57E94EA2C25",
+                               "RelativePath":  "telemetry_buffer\\frame_42.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "7902F300A0B46EF45DB5580ECE46170F8C3EE8669F31B19E56299483AC004D26",
+                               "RelativePath":  "telemetry_buffer\\frame_43.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "0440ADEC8832F957ED85CD3E9B5371C6481FD4BB34BD33AEB301793CE59065D4",
+                               "RelativePath":  "telemetry_buffer\\frame_44.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "B96DFB7F828A37D33555E924801D76B53D8819FDF579B8DE72DC4D18BD15DA41",
+                               "RelativePath":  "telemetry_buffer\\frame_45.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "F5B874485E0E01966CAAD6194F331318C4EF90CABE0732699E459523B09278B0",
+                               "RelativePath":  "telemetry_buffer\\frame_46.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "FB55ED1F26A68744193FD7C3533289D79AC7937A7B1FA6C7B62EA902AD0791A0",
+                               "RelativePath":  "telemetry_buffer\\frame_47.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "C986DE01708914AA92D2940E6F566F7F33F3EA05844035F7CFF7F1A995C4A4A1",
+                               "RelativePath":  "telemetry_buffer\\frame_48.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "8ECA199CBB029188A91C269C0AE143DA3AC68E8B88672CAD15417CA68265BB5D",
+                               "RelativePath":  "telemetry_buffer\\frame_49.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "92C0EBCB7C01EB642D6E08768BEE799A6D1A1BD1ECE6F6D178F320FF5D6247E6",
+                               "RelativePath":  "telemetry_buffer\\frame_5.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "08B36A53DE9DBFCAF1D20F5BD0A24870A68C3920F4DDF4EEFAE25812ED78E001",
+                               "RelativePath":  "telemetry_buffer\\frame_50.json"
+                           },
+                           {
+                               "SizeBytes":  534,
+                               "SHA256":  "651F470583C60E60E38A9EF8D7917DA88DCADD9A99DCE9DA93ECE099F1F683AF",
+                               "RelativePath":  "telemetry_buffer\\frame_51.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "7498862AD6AB931967726130AFD3BB50DC6FD32EE0345E3F987EEA90780A6E0A",
+                               "RelativePath":  "telemetry_buffer\\frame_52.json"
+                           },
+                           {
+                               "SizeBytes":  533,
+                               "SHA256":  "891CD7C2E7EF982679A3EB964227927772ABB192A888D699D80371312121ED97",
+                               "RelativePath":  "telemetry_buffer\\frame_53.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "E1FF8CB06C06EE10F4A13BDC58D18D8548B0EE978110A1A4A4ABD5451E567262",
+                               "RelativePath":  "telemetry_buffer\\frame_54.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "083AB9F17DC0F0A810886F51A9A0871936B632AFDD166A7A85431AC928BAF03D",
+                               "RelativePath":  "telemetry_buffer\\frame_55.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "1D7CF4ED6E5EC2167E7E1BA55B342FC48F582BFE117CB9E8A9465D28916AF963",
+                               "RelativePath":  "telemetry_buffer\\frame_56.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "E68414F55B2BAD66150597E221026D11C8E79E6ECEDFC4E346A91AFB944A983E",
+                               "RelativePath":  "telemetry_buffer\\frame_57.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "EBA201DBA40A43D04B66F07426087DDC6415B347CE1735616A0EA2CF99339099",
+                               "RelativePath":  "telemetry_buffer\\frame_58.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "A48B734DC9C01679895CA766E01516F203B279849E22F7280A987F7EBD9A1971",
+                               "RelativePath":  "telemetry_buffer\\frame_59.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "0995C872F68021E3CCCF40F1F6565C7BBDE242C271B935433294C73E9BBFE386",
+                               "RelativePath":  "telemetry_buffer\\frame_6.json"
+                           },
+                           {
+                               "SizeBytes":  533,
+                               "SHA256":  "7F796884AA2792E4A73D6288DDCF8DD80B12ADB59B295F537E1B3F18CE1308EE",
+                               "RelativePath":  "telemetry_buffer\\frame_60.json"
+                           },
+                           {
+                               "SizeBytes":  534,
+                               "SHA256":  "1BEF771565255CB60FF0C07908BA4E4EECE6AF1BD7674350BE242FA07E889DB0",
+                               "RelativePath":  "telemetry_buffer\\frame_61.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "5625DE405FBB1D14AF99653594608BF5AD71A0C6385AC3A33606B4DC9D72593F",
+                               "RelativePath":  "telemetry_buffer\\frame_62.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "CE473907A33B6612353005269D9E7C12E4870B3060A3AA11996E526D96ED01CB",
+                               "RelativePath":  "telemetry_buffer\\frame_63.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "26121CF8507A59C077572EEF7ED3DD48FDC0F7A5C7C117AB2B21301576AC1D2B",
+                               "RelativePath":  "telemetry_buffer\\frame_64.json"
+                           },
+                           {
+                               "SizeBytes":  532,
+                               "SHA256":  "F1F663B23520195679D891DD49BD15046216762E095E16E76515AF881A274C25",
+                               "RelativePath":  "telemetry_buffer\\frame_65.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "D86173D1294ACFA4108BBE749D324D7D57F6D76CCB73BCB4F18DCC37B88DD8AB",
+                               "RelativePath":  "telemetry_buffer\\frame_66.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "808E75DD649F0EF2B01C71D38A166C08975DA70D7F36325182EAF123B12D753A",
+                               "RelativePath":  "telemetry_buffer\\frame_67.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "BCEDA20CEE85642C9D004F027C65E5410C8E487A29136E216C84C759AFAB13C4",
+                               "RelativePath":  "telemetry_buffer\\frame_68.json"
+                           },
+                           {
+                               "SizeBytes":  532,
+                               "SHA256":  "5DA043BEEF4D0977AC1874B44BE647E9186BDCCD30A602393092CD497D1EAA94",
+                               "RelativePath":  "telemetry_buffer\\frame_69.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "72826FF8FD1B8D0FAE0676A3F248085E5EF63FE70120E8B1D079A46E3E2E2A74",
+                               "RelativePath":  "telemetry_buffer\\frame_7.json"
+                           },
+                           {
+                               "SizeBytes":  533,
+                               "SHA256":  "DE1105248460D93E72A7B752DC14D390D604F75B7BADE93BC436D2B48C533C76",
+                               "RelativePath":  "telemetry_buffer\\frame_70.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "50A7CE6B44AE557C8D382AD421FA103CBD27A4E5AD4769DD6B69E7B533776A76",
+                               "RelativePath":  "telemetry_buffer\\frame_71.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "787F7479FE46B3794B58ADF00CD1D7A36D366C5FB58EA1852E787EF2067F9BFD",
+                               "RelativePath":  "telemetry_buffer\\frame_72.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "AC0821DDD85D921221BD576EC9DF9DDF1561E87B947C8C40B4FF8B867C6748F3",
+                               "RelativePath":  "telemetry_buffer\\frame_73.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "16F5359D4E626BA912A2EB834203869C552F90D632B05FBEF62BD8934009AB40",
+                               "RelativePath":  "telemetry_buffer\\frame_74.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "675072E39D597D9BC07AC37F452B906745D2277E35A1FD4BE079CE9566B6D614",
+                               "RelativePath":  "telemetry_buffer\\frame_75.json"
+                           },
+                           {
+                               "SizeBytes":  533,
+                               "SHA256":  "25EDD1CB43B49011C195215A16006AE3A663258F739411AB0E0D0D57B253D439",
+                               "RelativePath":  "telemetry_buffer\\frame_76.json"
+                           },
+                           {
+                               "SizeBytes":  533,
+                               "SHA256":  "CBD5D2E7B41E22A18FDDD3D5A597C73B5893ACDFB2A7B1B853308090B3573B15",
+                               "RelativePath":  "telemetry_buffer\\frame_77.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "D242A3348DB76D579D0C7305AAF8E1F3FA0CE48949E1EC709AB5ECABAF9EB179",
+                               "RelativePath":  "telemetry_buffer\\frame_78.json"
+                           },
+                           {
+                               "SizeBytes":  533,
+                               "SHA256":  "A6F1E8B2C41296335E32E9F0D66D28869AF26AEDB00F3084F2D1C8C05D120E95",
+                               "RelativePath":  "telemetry_buffer\\frame_79.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "923C832FB350DECF88A0EA3452B470DF5C352820EF2E9C6D7365DF16DEF177D3",
+                               "RelativePath":  "telemetry_buffer\\frame_8.json"
+                           },
+                           {
+                               "SizeBytes":  530,
+                               "SHA256":  "15E7519585196A2748B3F1D27A5201BC17B8B4B310A677CB51924998F749983C",
+                               "RelativePath":  "telemetry_buffer\\frame_80.json"
+                           },
+                           {
+                               "SizeBytes":  533,
+                               "SHA256":  "5F9AE944194C39C27031DB74B870CD47AE7AB469A9CAD599613CBD8F7F93E889",
+                               "RelativePath":  "telemetry_buffer\\frame_81.json"
+                           },
+                           {
+                               "SizeBytes":  533,
+                               "SHA256":  "539A2467146814BCD3FE4BBD7675E6C4815AAFA8731BF334DFDBA733246F51C1",
+                               "RelativePath":  "telemetry_buffer\\frame_82.json"
+                           },
+                           {
+                               "SizeBytes":  529,
+                               "SHA256":  "E3488DAF3F8A9CE6289D71DEF68A7A9334191E82DF9421FAF0681293B9F65E59",
+                               "RelativePath":  "telemetry_buffer\\frame_9.json"
+                           },
+                           {
+                               "SizeBytes":  11591,
+                               "SHA256":  "D4945245E3630E58A83975E2145C1B0FC8479D4FC7832EC430D0505FA55DD5CF",
+                               "RelativePath":  "TESTING.md"
+                           },
+                           {
+                               "SizeBytes":  11413,
+                               "SHA256":  "7E8D2070E33B09743B99ED2BE75B0A79B8503ED3216281F7217B3458CF3C9682",
+                               "RelativePath":  "tools\\cesium-render.html"
+                           },
+                           {
+                               "SizeBytes":  14155,
+                               "SHA256":  "0A1DC64DF37FDE78B7DC4858763315A17C70C5EA4BC1B8B546C59FEE5FB7B641",
+                               "RelativePath":  "tools\\cesium-render.mjs"
+                           },
+                           {
+                               "SizeBytes":  13639,
+                               "SHA256":  "58B6CAE44E7FF2D157DFECBC947B8E364AF36EDE44564FA3F5DD6880E2CA2E55",
+                               "RelativePath":  "tools\\pano-pinhole.mjs"
+                           },
+                           {
+                               "SizeBytes":  7048,
+                               "SHA256":  "0FA6940A0D04CEEA6B49E38E57636FE967B49F517B2BDED78F7D05E0CA96BA2D",
+                               "RelativePath":  "tools\\README.md"
+                           },
+                           {
+                               "SizeBytes":  12504,
+                               "SHA256":  "9517F2B1B030EBBE7B80563F651E55F0061BAF3BED341CAC62B809700E2BC209",
+                               "RelativePath":  "tools\\sat-ortho.mjs"
+                           },
+                           {
+                               "SizeBytes":  10428,
+                               "SHA256":  "BDDFDA953CB6D1AF314BA1319ABE533949015CA2266A824EB6C39532DB92A78A",
+                               "RelativePath":  "tools\\streetview-headings.mjs"
+                           },
+                           {
+                               "SizeBytes":  14240,
+                               "SHA256":  "7C016066E43CC9838301EB0EBB75605CB6A3CAE68569FD3EBC2C3F7F44E59FAC",
+                               "RelativePath":  "tools\\streetview-panorama.mjs"
+                           },
+                           {
+                               "SizeBytes":  342748,
+                               "SHA256":  "2BE15CF6320BDA72B8A8D70D12DDFC04729151EEDE9AD45A23477B2699DCD4E1",
+                               "RelativePath":  "vite.config.js"
+                           }
+                       ],
+    "Engine":  "God\u0027s Eye View - Sovereign Merkle Proof Core v1.0"
 }
